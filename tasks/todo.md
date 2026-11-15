@@ -37,32 +37,31 @@
 
 ## Phase 2 : recherche et enrichissement
 
-### Tâche 3 : Ajouter la recherche et les filtres
+### Tâche 3 : Ajouter la recherche par nom
 
-**Description :** permettre de chercher par nom et de filtrer le répertoire par style.
+**Description :** permettre de retrouver rapidement un pas par son nom ou son nom alternatif. Le catalogue V1 ne couvre qu’un seul style.
 
 **Critères d’acceptation :**
 - [x] La recherche trouve un pas par son nom et ses variantes.
-- [x] Les trois styles peuvent être sélectionnés indépendamment.
 - [x] Un état vide clair apparaît quand aucun pas ne correspond.
 
-**Vérification :** essayer recherche exacte, recherche partielle, chaque filtre de style et combinaison recherche/filtre.
+**Vérification :** essayer une recherche exacte, partielle, par nom alternatif et sans résultat.
 **Dépendances :** tâche 2.
 **Fichiers probables :** `index.html`, `app.js`, `styles.css`.
 **Taille estimée :** petite.
 
 ### Tâche 4 : Compléter un premier lot de pas simples
 
-**Description :** ajouter des pas simples représentatifs du hip-hop/new-style, popping et locking, en complément du Two-step et du Bart Simpson.
+**Description :** ajouter des pas simples de hip-hop/new-style en complément du Two-step et du Bart Simpson.
 
-**État du premier lot :** Two-step, Bart Simpson, Running Man, Happy Feet, Fresno, Pop / hit, Wave, Dime stop, Lock, Point, Wrist roll, Muscle man, Pace, Scooby Doo et Scoobot.
+**État du premier lot :** Two-step, Bart Simpson, Running Man et Happy Feet.
 
 **Critères d’acceptation :**
-- [x] Les trois styles inclus ont des entrées représentatives.
+- [x] Le style hip-hop/new-style a des entrées représentatives.
 - [x] Chaque entrée ajoutée a un nom, un style et une séquence de 2–3 poses compréhensible.
 - [x] Les relations de dérivation incertaines ne sont pas affirmées comme des faits.
 
-**Vérification :** parcourir chaque fiche et filtrer les entrées par style ; vérifier les références disponibles.
+**Vérification :** parcourir chaque fiche et vérifier les références disponibles.
 **Dépendances :** tâches 1–3.
 **Fichiers probables :** `data/steps.js` ou `data/steps.json`, `assets/steps/` si les dessins sont séparés.
 **Taille estimée :** moyenne.
@@ -82,7 +81,7 @@
 **Fichiers probables :** `data/steps.js` ou `data/steps.json`.
 **Taille estimée :** moyenne, dépend du nombre de références disponibles.
 
-**Point de contrôle après tâches 3–5 :** essayer recherche, filtres, cas incomplets et navigation vidéo sur les trois styles.
+**Point de contrôle après tâches 3–5 :** essayer recherche, cas incomplets et navigation vidéo.
 
 ## Phase 3 : accessibilité et remise
 
@@ -93,7 +92,7 @@
 **Critères d’acceptation :**
 - [ ] Contrôles utilisables au clavier avec focus visible.
 - [ ] Les schémas ont un titre ou une description compréhensible par lecteur d’écran.
-- [ ] Les filtres et les fiches restent lisibles sur petit et grand écran.
+- [ ] La recherche et les fiches restent lisibles sur petit et grand écran.
 
 **Vérification :** navigation clavier et inspection manuelle sur largeur mobile et ordinateur.
 **Dépendances :** tâches 2–5.

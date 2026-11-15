@@ -10,15 +10,13 @@ Le répertoire est d’abord destiné à son créateur pour son entraînement pe
 
 ## Périmètre initial
 
-- Hip-hop / new-style
-- Popping
-- Locking
+- Hip-hop / new-style uniquement
 
 Chaque fiche doit présenter le nom du pas, son style, ses dérivations éventuelles et un lien vers une vidéo. Elle doit aussi inclure 2–3 silhouettes très simples, dessinées avec des traits pour le corps et les membres, afin de montrer les positions ou le mouvement. Des flèches peuvent être ajoutées si elles facilitent la compréhension.
 
 Le premier lot commencera par des pas simples, notamment le Two-step et le Bart Simpson, puis sera complété par d’autres pas simples. YouTube est la source vidéo envisagée, mais les liens vidéo ne sont pas la priorité du premier travail.
 
-La house pourra être ajoutée ultérieurement.
+Le popping et le locking sont retirés du périmètre. La house pourra être réévaluée ultérieurement.
 
 ## Format
 

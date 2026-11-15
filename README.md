@@ -1,6 +1,6 @@
 # Steps — Répertoire de danse
 
-Petit site statique de pas hip-hop/new-style, popping et locking. Les fiches sont dans `steps.js` et peuvent être enrichies directement.
+Petit site statique de pas hip-hop/new-style. Les fiches sont dans `steps.js` et peuvent être enrichies directement.
 
 ## Ouvrir le site
 
@@ -8,7 +8,7 @@ Ouvrir `index.html` dans un navigateur moderne. Le site n’a pas besoin de serv
 
 ## Ajouter un pas
 
-Copier une entrée existante dans `steps.js`, choisir un `id` unique, un nom, un style (`hip-hop`, `popping` ou `locking`), puis ajouter une description, une éventuelle dérivation, une URL vidéo et trois poses. Chaque pose indique une légende et la position approximative des bras et des jambes sous forme de petits vecteurs de traits. La vue est de face par défaut ; mettre `view: 'profile'` quand un angle de côté explique mieux l’appui ou le déplacement, puis `facing: 'left'` si la silhouette doit regarder à gauche (à droite par défaut). `armJoints` et `legJoints` sont des chaînes de points `[dx, dy]` — une chaîne pour chaque côté, mesurée depuis l’épaule ou la hanche — et peuvent contenir autant de points d’articulation que le geste demande. Sans ces chaînes, les coudes et genoux sont placés automatiquement. Les champs `video` et `derivation` peuvent rester vides lorsqu’ils ne sont pas établis.
+Copier une entrée existante dans `steps.js`, choisir un `id` unique, puis ajouter un nom, le style hip-hop/new-style, une description, une éventuelle dérivation, une URL vidéo et trois poses. Chaque pose indique une légende et la position approximative des bras et des jambes sous forme de petits vecteurs de traits. La vue est de face par défaut ; mettre `view: 'profile'` quand un angle de côté explique mieux l’appui ou le déplacement, puis `facing: 'left'` si la silhouette doit regarder à gauche (à droite par défaut). `armJoints` et `legJoints` sont des chaînes de points `[dx, dy]` — une chaîne pour chaque côté, mesurée depuis l’épaule ou la hanche — et peuvent contenir autant de points d’articulation que le geste demande. Sans ces chaînes, les coudes et genoux sont placés automatiquement. Les champs `video` et `derivation` peuvent rester vides lorsqu’ils ne sont pas établis.
 
 Les silhouettes sont des repères simplifiés pour mémoriser l’ordre des positions ; elles ne remplacent pas une démonstration complète. Les noms et variantes peuvent changer d’une scène ou d’un danseur à l’autre.
 
@@ -20,10 +20,6 @@ Le dossier peut être publié comme site statique après avoir choisi si le lien
 
 - [Two-step hip-hop — Howcast sur YouTube](https://www.youtube.com/watch?v=xvmNPLFoDEc)
 - [Bart Simpson — tutoriel sur YouTube](https://www.youtube.com/watch?v=lG7DS0oDcaQ)
-- [Fresno — tutoriel par Electrode / K.O. Dance Academy](https://www.youtube.com/watch?v=8sb1gmkNf0k)
 - [Running Man — Howcast sur YouTube](https://www.youtube.com/watch?v=lYpRasK4c9k)
 - [Happy Feet — tutoriel sur YouTube](https://www.youtube.com/watch?v=S0vC0Yfet-w)
-- [Scoobot — tutoriel KAFQA Dance](https://www.youtube.com/watch?v=vuPZ6UW4sKQ)
 - [Description du Bart Simpson par STEEZY](https://www.steezy.co/posts/how-to-do-the-bart-simpson)
-- [Repères sur le locking par Locking.se](https://www.locking.se/en/steps-and-moves)
-- [Repères sur le Fresno et d’autres bases du popping](https://czhao17.wixsite.com/popping/blank-i6hsk)

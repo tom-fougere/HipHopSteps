@@ -1,11 +1,11 @@
 # Plan d’implémentation : Répertoire de pas hip-hop V1
 
 **Spécification source :** [docs/specs/hip-hop-steps-v1.md](../docs/specs/hip-hop-steps-v1.md)  
-**État du dépôt inspecté :** aucun code applicatif ni manifest de projet existant ; le dépôt ne semble pas initialisé avec Git.
+**État Git :** dépôt local initialisé sur `main`, aucun remote configuré.
 
 ## Aperçu
 
-Créer un petit site statique en français, sans dépendance obligatoire, qui présente des fiches de pas filtrables. Les données resteront séparées de l’interface et les silhouettes seront des schémas SVG simples et accessibles. Le site fonctionnera localement dans un navigateur ; son déploiement public ou privé pourra être décidé après la V1.
+Créer un petit site statique en français, sans dépendance obligatoire, qui présente des fiches de pas consultables par recherche. Les données resteront séparées de l’interface et les silhouettes seront des schémas SVG simples et accessibles. La V1 couvre le hip-hop/new-style uniquement. Le site fonctionnera localement dans un navigateur ; son déploiement public ou privé pourra être décidé après la V1.
 
 ## Décisions d’architecture
 
@@ -28,11 +28,11 @@ Créer un petit site statique en français, sans dépendance obligatoire, qui pr
 
 ### Phase 2 : recherche et enrichissement
 
-5. Ajouter la recherche par nom et les filtres par style.
-6. Compléter le premier lot avec d’autres pas simples, répartis entre hip-hop/new-style, popping et locking.
+5. Ajouter la recherche par nom.
+6. Compléter le premier lot avec d’autres pas simples de hip-hop/new-style.
 7. Ajouter les liens YouTube vérifiés quand ils sont disponibles, sans bloquer l’ajout des fiches sur ce point.
 
-**Point de contrôle :** rechercher un nom et filtrer chacun des trois styles fonctionne, y compris avec des fiches sans vidéo ou sans dérivation connue.
+**Point de contrôle :** rechercher un nom ou une variante fonctionne, y compris avec des fiches sans vidéo ou sans dérivation connue.
 
 ### Phase 3 : accessibilité et remise
 

@@ -7,11 +7,11 @@
 
 Construire une page web légère qui aide une personne à retrouver le nom d’un pas de danse, identifier son style et comprendre le mouvement afin de s’entraîner. La page doit pouvoir être partagée avec un groupe de danse amateur.
 
-La V1 couvre le hip-hop / new-style, le popping et le locking. Elle constitue un répertoire de référence personnel, et non un cours structuré.
+La V1 couvre uniquement le hip-hop / new-style. Elle constitue un répertoire de référence personnel, et non un cours structuré.
 
 ## Utilisateurs et scénarios
 
-- Comme danseur, je peux parcourir et filtrer les pas par nom ou style.
+- Comme danseur, je peux retrouver un pas par son nom ou son nom alternatif.
 - Comme danseur, je peux voir si un pas dérive d’un autre pas connu.
 - Comme danseur, je peux ouvrir une vidéo de démonstration pour m’entraîner.
 - Comme danseur, je peux comprendre rapidement l’idée du mouvement à partir de 2–3 silhouettes en traits.
@@ -22,7 +22,7 @@ La V1 couvre le hip-hop / new-style, le popping et le locking. Elle constitue un
 Chaque entrée contient :
 
 - nom du pas ;
-- style associé : hip-hop / new-style, popping ou locking ;
+- style associé : hip-hop / new-style ;
 - relation de dérivation, si connue, avec le nom du pas source ;
 - lien vers une vidéo de démonstration ;
 - séquence de 2–3 silhouettes très simples, corps et membres représentés par des traits ;
@@ -36,8 +36,8 @@ Une dérivation inconnue ou non établie doit être indiquée comme telle, et no
 ## Fonctionnement et interface
 
 - Présenter les pas sous forme de liste ou de grille de fiches compacte.
-- Permettre de filtrer par style et de rechercher par nom.
-- Garder les filtres et la recherche utilisables sur écran mobile et ordinateur.
+- Permettre de rechercher par nom et noms alternatifs.
+- Garder la recherche utilisable sur écran mobile et ordinateur.
 - Afficher les silhouettes et les informations principales sans obliger l’utilisateur à ouvrir la vidéo.
 - Ouvrir le lien vidéo dans un nouvel onglet ou lecteur adapté.
 - Utiliser une interface sobre, lisible et facile à partager ; aucune direction artistique poussée n’est requise.
@@ -46,7 +46,7 @@ Une dérivation inconnue ou non établie doit être indiquée comme telle, et no
 
 L’objectif est de couvrir le plus grand nombre de pas possible dans les styles de la V1. Le contenu sera enrichi progressivement en commençant par des pas simples, notamment le Two-step et le Bart Simpson, puis par d’autres pas simples des styles retenus. Comme les noms et filiations peuvent varier selon les communautés, éviter de présenter une origine incertaine comme un fait. La liste peut s’enrichir progressivement ; l’exhaustivité absolue n’est pas un critère binaire de livraison.
 
-Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man, Happy Feet, le Fresno, Pop / hit, Wave, Dime stop, Lock, Point, Wrist roll, Muscle man, Pace, Scooby Doo et Scoobot. Cette sélection est un point de départ, pas une prétention à l’exhaustivité.
+Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man et Happy Feet. Cette sélection est un point de départ, pas une prétention à l’exhaustivité. Le popping et le locking ne font plus partie de la V1 ; la house reste différée.
 
 ## Hypothèses
 
@@ -61,7 +61,7 @@ Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man,
 
 - Développement : à définir.
 - Construction : à définir selon la pile retenue.
-- Vérification : vérification manuelle des filtres, liens et affichage responsive ; commandes automatisées à définir avec la pile.
+- Vérification : vérification manuelle de la recherche, des liens et de l’affichage responsive ; commandes automatisées à définir avec la pile.
 
 ## Structure du projet envisagée
 
@@ -83,7 +83,7 @@ Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man,
 
 ## Stratégie de vérification
 
-- Vérifier que chaque filtre par style et la recherche par nom donnent des résultats cohérents.
+- Vérifier que la recherche par nom et variante donne des résultats cohérents.
 - Vérifier les fiches avec et sans dérivation renseignée.
 - Vérifier qu’une fiche sans vidéo ne casse pas l’affichage.
 - Vérifier que chaque séquence comporte 2–3 poses compréhensibles et que les flèches, si présentes, ont un sens clair.
@@ -92,24 +92,24 @@ Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man,
 
 ## Critères de réussite
 
-- L’utilisateur peut filtrer le répertoire par style et retrouver un pas par son nom.
+- L’utilisateur peut retrouver chacun des pas du répertoire par son nom.
 - Chaque fiche présente le nom, le style, une courte explication du mouvement, la relation de dérivation lorsqu’elle est établie et 2–3 silhouettes simples. Un lien YouTube peut compléter la fiche ; la collecte des vidéos n’est pas prioritaire par rapport à l’identification et à la compréhension des pas.
 - Une entrée sans dérivation ou vidéo vérifiée reste présentée clairement sans information inventée ni interface cassée.
-- Les filtres et les fiches restent lisibles sur mobile et ordinateur.
+- La recherche et les fiches restent lisibles sur mobile et ordinateur.
 - La page peut être partagée avec le groupe sans compte ni procédure de cours.
-- Le contenu initial comporte des exemples représentatifs des trois styles inclus ; la couverture peut ensuite être enrichie.
+- Le contenu initial comprend quatre pas hip-hop/new-style simples ; la couverture peut ensuite être enrichie.
 
 ## Limites et décisions
 
 ### Toujours
 
-- Conserver les trois styles initiaux et le but d’entraînement personnel.
+- Conserver le périmètre hip-hop/new-style et le but d’entraînement personnel.
 - Distinguer les faits établis des filiations ou appellations incertaines.
 - Garder la page simple à parcourir et les données faciles à enrichir.
 
 ### Demander avant
 
-- Ajouter un style majeur au périmètre initial, notamment la house.
+- Ajouter la house au périmètre initial.
 - Ajouter des comptes, une base distante, des contributions publiques ou un service payant.
 - Introduire des dépendances importantes ou un hébergement nécessitant des coûts.
 
@@ -122,17 +122,18 @@ Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man,
 ## Hors périmètre / suite possible
 
 - Ajouter la house après validation de la V1.
-- Ajouter d’autres styles ou des filtres complémentaires selon l’usage réel.
+- Réévaluer l’ajout de la house ultérieurement.
+- Ne pas réintroduire le popping ou le locking dans la V1.
 - Permettre à plusieurs personnes de proposer ou modifier des fiches.
 - Développer des animations détaillées ou des tutoriels de cours.
 
 ## Priorité du premier lot
 
 1. Ajouter le Two-step et le Bart Simpson comme premiers exemples.
-2. Compléter avec d’autres pas simples, en couvrant les styles inclus.
+2. Compléter avec d’autres pas simples de hip-hop/new-style.
 3. Ajouter ou vérifier les liens YouTube ensuite ; la vidéo est utile, mais secondaire au démarrage.
 
 ## Questions ouvertes
 
 - Quel mode de partage sera retenu : dépôt statique public, hébergement personnel ou page consultée localement ?
-- Quels autres pas simples ajouter après le Two-step et le Bart Simpson ?
+- Quels autres pas simples ajouter après le premier lot de quatre ?

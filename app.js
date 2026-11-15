@@ -2,8 +2,6 @@ const list = document.querySelector('#steps-list');
 const search = document.querySelector('#search');
 const empty = document.querySelector('#empty-state');
 const count = document.querySelector('#step-count');
-const filters = [...document.querySelectorAll('.filter')];
-let activeStyle = 'all';
 
 function defaultJoints(endpoint, side, limb) {
   const bend = limb === 'arm' ? 3 : -2;
@@ -17,7 +15,7 @@ function articulatedLimb(anchor, joints) {
 }
 
 function figure(pose, x) {
-  const y = 28;
+  const y = 25;
   const [leftArm, rightArm] = pose.arms;
   const [leftLeg, rightLeg] = pose.legs;
   const leftArmJoints = pose.armJoints?.[0] ?? defaultJoints(leftArm, 0, 'arm');
@@ -45,7 +43,7 @@ function motionSvg(step) {
   const xs = [52, 150, 248];
   const views = [...new Set(step.poses.map(pose => pose.view === 'profile' ? 'profil' : 'face'))];
   const figures = step.poses.map((pose, index) => figure(pose, xs[index])).join('');
-  return `<span class="motion-view">Vue ${views.join(' + ')}</span><svg viewBox="0 0 300 92" role="img" aria-labelledby="${step.id}-title ${step.id}-desc">
+  return `<span class="motion-view">Vue ${views.join(' + ')}</span><svg viewBox="0 0 300 104" role="img" aria-labelledby="${step.id}-title ${step.id}-desc">
     <title id="${step.id}-title">Séquence du pas ${step.name}</title>
     <desc id="${step.id}-desc">Trois silhouettes schématiques montrant : ${step.poses.map(pose => pose.caption.toLowerCase()).join(', puis ')}.</desc>
     <defs><marker id="arrowhead-${step.id}" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="none" stroke="#e85a32" stroke-width="1.4"></path></marker></defs>
@@ -56,11 +54,7 @@ function motionSvg(step) {
 
 function render() {
   const query = search.value.trim().toLocaleLowerCase('fr');
-  const visible = window.steps.filter(step => {
-    const matchesStyle = activeStyle === 'all' || step.style === activeStyle;
-    const searchable = [step.name, ...step.aliases, step.styleLabel].join(' ').toLocaleLowerCase('fr');
-    return matchesStyle && searchable.includes(query);
-  });
+  const visible = window.steps.filter(step => [step.name, ...step.aliases, step.styleLabel].join(' ').toLocaleLowerCase('fr').includes(query));
 
   list.innerHTML = visible.map(step => `<article class="step-row" aria-labelledby="${step.id}-name">
     <div class="step-info">
@@ -81,16 +75,6 @@ function render() {
   empty.hidden = visible.length !== 0;
 }
 
-filters.forEach(button => button.addEventListener('click', () => {
-  activeStyle = button.dataset.filter;
-  filters.forEach(filter => {
-    const selected = filter === button;
-    filter.classList.toggle('is-active', selected);
-    filter.setAttribute('aria-pressed', String(selected));
-  });
-  render();
-}));
-
 search.addEventListener('input', render);
 document.addEventListener('keydown', event => {
   if (event.key === '/' && document.activeElement !== search && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
@@ -104,5 +88,4 @@ document.addEventListener('keydown', event => {
   }
 });
 
-document.querySelectorAll('.filter span').forEach(counter => { counter.textContent = String(counter.closest('.filter').dataset.filter === 'all' ? window.steps.length : window.steps.filter(step => step.style === counter.closest('.filter').dataset.filter).length).padStart(2, '0'); });
 render();

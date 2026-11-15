@@ -7,7 +7,6 @@
   --muted: #76766f;
   --line: #d9d5cb;
   --orange: #e85a32;
-  --lime: #d4e96a;
   --mono: 'DM Mono', 'Courier New', monospace;
   --sans: 'DM Sans', Arial, sans-serif;
   --display: 'Space Grotesk', 'Arial Black', sans-serif;
@@ -38,13 +37,7 @@ h1 { max-width: 700px; margin: 0; font: 600 clamp(48px, 8vw, 92px)/.98 var(--dis
 .search-wrap input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 14px; }
 .search-wrap input::placeholder { color: #88877f; }
 .search-wrap kbd { color: #929188; font: 11px var(--mono); }
-.filters { display: flex; flex-wrap: wrap; gap: 7px; }
-.filter { min-height: 38px; padding: 0 12px; border: 1px solid var(--line); border-radius: 2px; background: transparent; color: #55564f; cursor: pointer; font-size: 12px; transition: background .15s ease, color .15s ease, border-color .15s ease; }
-.filter span { margin-left: 5px; color: #99978e; font: 10px var(--mono); }
-.filter:hover { border-color: var(--ink); }
-.filter.is-active { border-color: var(--ink); background: var(--ink); color: white; }
-.filter.is-active span { color: var(--lime); }
-.filter:focus-visible, a:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
 .catalog-heading { display: grid; grid-template-columns: minmax(180px, 1.05fr) minmax(380px, 2fr) minmax(115px, .55fr); gap: 20px; padding: 14px 0; color: #89877e; font: 10px var(--mono); letter-spacing: .08em; }
 .catalog-heading span:nth-child(2) { padding-left: 12px; }
 .step-row { display: grid; grid-template-columns: minmax(180px, 1.05fr) minmax(380px, 2fr) minmax(115px, .55fr); gap: 20px; align-items: center; min-height: 190px; padding: 23px 0; border-top: 1px solid var(--line); }
@@ -80,8 +73,6 @@ h1 { max-width: 700px; margin: 0; font: 600 clamp(48px, 8vw, 92px)/.98 var(--dis
   .intro { padding: 60px 0 44px; }
   .toolbar { align-items: stretch; flex-direction: column; gap: 14px; }
   .search-wrap { width: 100%; }
-  .filters { gap: 6px; }
-  .filter { flex: 1 1 auto; padding: 0 8px; }
   .catalog-heading { display: none; }
   .step-row { grid-template-columns: 1fr auto; gap: 5px 14px; padding: 20px 0; }
   .step-info { grid-column: 1; grid-row: 1; }
@@ -95,7 +86,6 @@ h1 { max-width: 700px; margin: 0; font: 600 clamp(48px, 8vw, 92px)/.98 var(--dis
 @media (max-width: 380px) {
   main { padding-right: 16px; padding-left: 16px; }
   .site-header { padding-right: 16px; padding-left: 16px; }
-  .filter { font-size: 11px; }
   .step-info h2 { font-size: 20px; }
   .step-number { font-size: 9px; }
   .pose-captions { font-size: 8px; }
