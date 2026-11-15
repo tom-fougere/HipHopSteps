@@ -54,10 +54,15 @@ h1 { max-width: 700px; margin: 0; font: 600 clamp(48px, 8vw, 92px)/.98 var(--dis
 .style-tag { width: fit-content; padding: 5px 7px 4px; border: 1px solid #c7c2b7; border-radius: 2px; color: #585950; font: 9px var(--mono); letter-spacing: .06em; text-transform: uppercase; }
 .derivation { margin: 9px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 .motion { grid-column: 2; grid-row: 1; display: flex; min-width: 0; flex-direction: column; gap: 6px; padding: 0 0 0 12px; }
+.motion-view { align-self: flex-end; color: #8b8981; font: 9px var(--mono); letter-spacing: .06em; text-transform: uppercase; }
 .motion svg { width: 100%; max-height: 128px; overflow: visible; }
 .pose-arrow { fill: none; stroke: var(--orange); stroke-width: 1.5; stroke-dasharray: 3 4; }
 .figure { fill: none; stroke: var(--ink); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
 .figure-head { fill: var(--paper); stroke: var(--ink); stroke-width: 2.4; }
+.joint { fill: var(--paper); stroke: var(--ink); stroke-width: 1.3; }
+.joint-core { fill: var(--ink); }
+.joint-end { fill: var(--orange); stroke: var(--paper); stroke-width: .8; }
+.profile-nose { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .pose-captions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; color: #77766e; font: 9px/1.35 var(--mono); }
 .pose-captions span { text-align: center; }
 .step-note { grid-column: 2; grid-row: 2; margin: 0; color: #565750; font-size: 12px; line-height: 1.5; }

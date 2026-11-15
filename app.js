@@ -5,20 +5,47 @@ const count = document.querySelector('#step-count');
 const filters = [...document.querySelectorAll('.filter')];
 let activeStyle = 'all';
 
+function defaultJoints(endpoint, side, limb) {
+  const bend = limb === 'arm' ? 3 : -2;
+  return [[endpoint[0] / 2 + (side === 0 ? 2 : -2), endpoint[1] / 2 + bend], endpoint];
+}
+
+function articulatedLimb(anchor, joints) {
+  const points = [anchor, ...joints];
+  const path = points.map(point => point.join(',')).join(' ');
+  return `<polyline points="${path}"></polyline>${joints.map((point, index) => `<circle class="joint ${index === joints.length - 1 ? 'joint-end' : ''}" cx="${point[0]}" cy="${point[1]}" r="${index === joints.length - 1 ? 1.8 : 2.2}"></circle>`).join('')}`;
+}
+
 function figure(pose, x) {
   const y = 28;
   const [leftArm, rightArm] = pose.arms;
   const [leftLeg, rightLeg] = pose.legs;
-  return `<g class="figure" transform="translate(${x + pose.shift} ${y}) rotate(${pose.lean} 0 35)">
+  const leftArmJoints = pose.armJoints?.[0] ?? defaultJoints(leftArm, 0, 'arm');
+  const rightArmJoints = pose.armJoints?.[1] ?? defaultJoints(rightArm, 1, 'arm');
+  const leftLegJoints = pose.legJoints?.[0] ?? defaultJoints(leftLeg, 0, 'leg');
+  const rightLegJoints = pose.legJoints?.[1] ?? defaultJoints(rightLeg, 1, 'leg');
+  const profile = pose.view === 'profile';
+  const leftShoulder = profile ? [-4, 15] : [-7, 15];
+  const rightShoulder = profile ? [4, 15] : [7, 15];
+  const leftHip = profile ? [-2, 38] : [-3, 38];
+  const rightHip = [3, 38];
+  const profileScale = pose.facing === 'left' ? '-.78 1' : '.78 1';
+  return `<g class="figure ${profile ? 'figure-profile' : ''}" transform="translate(${x + pose.shift} ${y}) rotate(${pose.lean} 0 35) scale(${profile ? profileScale : '1 1'})">
     <circle class="figure-head" cx="0" cy="0" r="7"></circle>
-    <path d="M0 8 L0 38 M-7 15 L${-7 + leftArm[0]} ${15 + leftArm[1]} M7 15 L${7 + rightArm[0]} ${15 + rightArm[1]} M-3 38 L${-3 + leftLeg[0]} ${38 + leftLeg[1]} M3 38 L${3 + rightLeg[0]} ${38 + rightLeg[1]}"></path>
+    ${profile ? '<path class="profile-nose" d="M6 -1 10 1 6 3"></path>' : ''}
+    <path d="M0 8 L0 38"></path>
+    <circle class="joint joint-core" cx="${leftShoulder[0]}" cy="15" r="2"></circle><circle class="joint joint-core" cx="${rightShoulder[0]}" cy="15" r="2"></circle>
+    ${articulatedLimb(leftShoulder, leftArmJoints)}${articulatedLimb(rightShoulder, rightArmJoints)}
+    <circle class="joint joint-core" cx="${leftHip[0]}" cy="38" r="2"></circle><circle class="joint joint-core" cx="${rightHip[0]}" cy="38" r="2"></circle>
+    ${articulatedLimb(leftHip, leftLegJoints)}${articulatedLimb(rightHip, rightLegJoints)}
   </g>`;
 }
 
 function motionSvg(step) {
   const xs = [52, 150, 248];
+  const views = [...new Set(step.poses.map(pose => pose.view === 'profile' ? 'profil' : 'face'))];
   const figures = step.poses.map((pose, index) => figure(pose, xs[index])).join('');
-  return `<svg viewBox="0 0 300 92" role="img" aria-labelledby="${step.id}-title ${step.id}-desc">
+  return `<span class="motion-view">Vue ${views.join(' + ')}</span><svg viewBox="0 0 300 92" role="img" aria-labelledby="${step.id}-title ${step.id}-desc">
     <title id="${step.id}-title">Séquence du pas ${step.name}</title>
     <desc id="${step.id}-desc">Trois silhouettes schématiques montrant : ${step.poses.map(pose => pose.caption.toLowerCase()).join(', puis ')}.</desc>
     <defs><marker id="arrowhead-${step.id}" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="none" stroke="#e85a32" stroke-width="1.4"></path></marker></defs>
