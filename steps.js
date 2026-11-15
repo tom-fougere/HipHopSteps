@@ -16,9 +16,9 @@ window.steps = [
     description: 'Pars d’un two-step avec rebond, puis fais glisser le pied qui rejoint l’autre. Tourne le bassin vers le déplacement ; les bras partent à l’opposé.',
     video: 'https://www.youtube.com/watch?v=lG7DS0oDcaQ', videoLabel: 'Voir le tutoriel',
     poses: [
-      { caption: 'Plie et pars', shift: 0, lean: 0, arms: [[-18, 2], [18, 2]], legs: [[-10, 30], [10, 30]] },
-      { caption: 'Glisse à droite', shift: 9, lean: 7, arms: [[-27, -7], [-13, 8]], legs: [[-2, 31], [25, 26]] },
-      { caption: 'Glisse à gauche', shift: -9, lean: -7, arms: [[13, 8], [27, -7]], legs: [[-25, 26], [2, 31]] }
+      { caption: 'Plie et pars', view: 'profile', shift: 0, lean: 0, arms: [[-18, 2], [18, 2]], armJoints: [[[-9, 7], [-18, 2]], [[9, 7], [18, 2]]], legs: [[-10, 30], [10, 30]], legJoints: [[[-5, 16], [-10, 30]], [[5, 16], [10, 30]]] },
+      { caption: 'Glisse à droite', view: 'profile', shift: 9, lean: 7, arms: [[-27, -7], [-13, 8]], armJoints: [[[-13, 4], [-27, -7]], [[-2, 2], [-13, 8]]], legs: [[-2, 31], [25, 26]], legJoints: [[[0, 15], [-2, 31]], [[13, 13], [25, 26]]] },
+      { caption: 'Glisse à gauche', view: 'profile', facing: 'left', shift: -9, lean: -7, arms: [[13, 8], [27, -7]], armJoints: [[[2, 2], [13, 8]], [[13, 4], [27, -7]]], legs: [[-25, 26], [2, 31]], legJoints: [[[-13, 13], [-25, 26]], [[0, 15], [2, 31]]] }
     ]
   },
   {
@@ -46,9 +46,9 @@ window.steps = [
     description: 'Fais voyager une vague d’une main à l’autre : poignet, coude, épaule, puis le bras opposé. Une articulation mène à la suivante.',
     video: null,
     poses: [
-      { caption: 'Poignet', shift: 0, lean: 0, arms: [[-26, -3], [18, 14]], legs: [[-12, 29], [12, 29]] },
-      { caption: 'Coude', shift: 0, lean: 0, arms: [[-24, 11], [22, -8]], legs: [[-12, 29], [12, 29]] },
-      { caption: 'Épaule', shift: 0, lean: 0, arms: [[-17, -9], [27, 4]], legs: [[-12, 29], [12, 29]] }
+      { caption: 'Poignet', shift: 0, lean: 0, arms: [[-26, -3], [18, 14]], armJoints: [[[-10, 0], [-19, -1], [-26, -3]], [[9, 5], [18, 14]]], legs: [[-12, 29], [12, 29]] },
+      { caption: 'Coude', shift: 0, lean: 0, arms: [[-24, 11], [22, -8]], armJoints: [[[-12, 1], [-24, 11]], [[8, 0], [16, -5], [22, -8]]], legs: [[-12, 29], [12, 29]] },
+      { caption: 'Épaule', shift: 0, lean: 0, arms: [[-17, -9], [27, 4]], armJoints: [[[-8, -3], [-17, -9]], [[10, -1], [19, 2], [27, 4]]], legs: [[-12, 29], [12, 29]] }
     ]
   },
   {
@@ -67,7 +67,7 @@ window.steps = [
     video: null,
     poses: [
       { caption: 'Prépare', shift: 0, lean: 0, arms: [[-18, 10], [18, 8]], legs: [[-12, 29], [12, 29]] },
-      { caption: 'Pointe', shift: 0, lean: 2, arms: [[-18, 10], [29, -8]], legs: [[-12, 29], [12, 29]] },
+      { caption: 'Pointe', shift: 0, lean: 2, arms: [[-18, 10], [29, -8]], armJoints: [[[-9, 7], [-18, 10]], [[12, 2], [22, -5], [29, -8]]], legs: [[-12, 29], [12, 29]] },
       { caption: 'Relâche', shift: 0, lean: 0, arms: [[-18, 8], [18, 8]], legs: [[-12, 29], [12, 29]] }
     ]
   },
@@ -86,9 +86,9 @@ window.steps = [
     description: 'Alterne les genoux : l’un monte pendant que l’autre pied glisse vers l’arrière, puis inverse. Les bras accompagnent comme une course sur place.',
     video: 'https://www.youtube.com/watch?v=lYpRasK4c9k', videoLabel: 'Voir le Running Man',
     poses: [
-      { caption: 'Pied au sol', shift: 0, lean: 0, arms: [[-18, 0], [18, 10]], legs: [[-12, 30], [14, 14]] },
-      { caption: 'Monte le genou', shift: 2, lean: 0, arms: [[-18, 10], [18, 0]], legs: [[-12, 14], [14, 30]] },
-      { caption: 'Inverse', shift: 0, lean: 0, arms: [[-18, 0], [18, 10]], legs: [[-12, 30], [14, 14]] }
+      { caption: 'Pied au sol', view: 'profile', shift: 0, lean: 0, arms: [[-18, 0], [18, 10]], legs: [[-12, 30], [14, 14]], legJoints: [[[-6, 15], [-12, 30]], [[7, 8], [14, 14]]] },
+      { caption: 'Monte le genou', view: 'profile', shift: 2, lean: 0, arms: [[-18, 10], [18, 0]], legs: [[-12, 14], [14, 30]], legJoints: [[[-6, 8], [-12, 14]], [[7, 15], [14, 30]]] },
+      { caption: 'Inverse', view: 'profile', shift: 0, lean: 0, arms: [[-18, 0], [18, 10]], legs: [[-12, 30], [14, 14]], legJoints: [[[-6, 15], [-12, 30]], [[7, 8], [14, 14]]] }
     ]
   },
   {
@@ -97,8 +97,8 @@ window.steps = [
     video: 'https://www.youtube.com/watch?v=S0vC0Yfet-w', videoLabel: 'Voir Happy Feet',
     poses: [
       { caption: 'Pieds parallèles', shift: 0, lean: 0, arms: [[-18, 10], [18, 10]], legs: [[-12, 29], [12, 29]] },
-      { caption: 'Pointe ouverte', shift: 0, lean: 0, arms: [[-18, 10], [18, 10]], legs: [[-22, 25], [8, 30]] },
-      { caption: 'Inverse l’appui', shift: 0, lean: 0, arms: [[-18, 10], [18, 10]], legs: [[-8, 30], [22, 25]] }
+      { caption: 'Pointe ouverte', shift: 0, lean: 0, arms: [[-18, 10], [18, 10]], legs: [[-22, 25], [8, 30]], legJoints: [[[-13, 14], [-22, 25]], [[6, 16], [8, 30]]] },
+      { caption: 'Inverse l’appui', shift: 0, lean: 0, arms: [[-18, 10], [18, 10]], legs: [[-8, 30], [22, 25]], legJoints: [[[-6, 16], [-8, 30]], [[13, 14], [22, 25]]] }
     ]
   },
   {
@@ -137,7 +137,7 @@ window.steps = [
     video: null,
     poses: [
       { caption: 'Uplock', shift: 0, lean: 0, arms: [[-23, -16], [23, -16]], legs: [[-12, 29], [12, 29]] },
-      { caption: 'Kick', shift: 4, lean: 3, arms: [[-18, 5], [20, -10]], legs: [[-12, 29], [24, 18]] },
+      { caption: 'Kick', view: 'profile', shift: 4, lean: 3, arms: [[-18, 5], [20, -10]], legs: [[-12, 29], [24, 18]], legJoints: [[[-7, 14], [-12, 29]], [[10, 8], [24, 18]]] },
       { caption: 'Change de pied', shift: -2, lean: 0, arms: [[-20, -10], [18, 5]], legs: [[-20, 18], [12, 29]] }
     ]
   },

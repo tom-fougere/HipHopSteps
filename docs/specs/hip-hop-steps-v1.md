@@ -26,6 +26,8 @@ Chaque entrée contient :
 - relation de dérivation, si connue, avec le nom du pas source ;
 - lien vers une vidéo de démonstration ;
 - séquence de 2–3 silhouettes très simples, corps et membres représentés par des traits ;
+- articulations visibles aux épaules, coudes, poignets, hanches, genoux et chevilles ; des articulations supplémentaires peuvent être placées individuellement lorsque le mouvement le demande ;
+- vue de face par défaut, avec une vue de profil possible pour chaque silhouette lorsque l’angle explique mieux le pas ;
 - courte explication en français du repère à suivre pendant l’entraînement ;
 - flèches de direction ou de déplacement lorsque cela aide à expliquer le mouvement.
 
@@ -75,6 +77,7 @@ Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man,
 - Garder les données des pas dans un format cohérent et facile à modifier.
 - Utiliser des noms de champs explicites et des identifiants stables pour les entrées.
 - Rendre les dessins lisibles à petite taille et fournir un texte alternatif ou une description accessible.
+- Permettre à chaque pose de préciser son orientation et ses points d’articulation ; calculer les coudes et genoux par défaut si les coordonnées détaillées ne sont pas fournies.
 - Garder les liens vidéo associés à la fiche concernée et afficher clairement le nom du pas.
 - Les conventions de code précises dépendront de la pile existante ; éviter toute dépendance si les fonctions requises peuvent être réalisées simplement sans elle.
 

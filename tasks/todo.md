@@ -24,8 +24,11 @@
 - [x] Le site s’ouvre localement sans serveur applicatif.
 - [x] Les fiches montrent le nom, le style, la dérivation quand elle est connue et le lien vidéo quand il existe.
 - [x] Chaque fiche rend ses 2–3 silhouettes et des flèches éventuelles dans un SVG accessible.
+- [x] Les coudes, poignets, genoux et autres articulations de base sont visibles ; une pose peut définir des articulations supplémentaires.
+- [x] Une pose peut être dessinée de profil si cet angle aide à comprendre le déplacement.
 
 **Vérification :** ouvrir la page dans un navigateur et vérifier les deux exemples, avec champs facultatifs présents et absents.
+**État :** le rendu général accepte les poses articulées et les vues de profil ; vérification visuelle navigateur encore à faire.
 **Dépendances :** tâche 1.
 **Fichiers probables :** `index.html`, `styles.css`, `app.js`, `assets/steps/`.
 **Taille estimée :** moyenne.

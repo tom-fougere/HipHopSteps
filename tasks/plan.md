@@ -22,14 +22,15 @@ Créer un petit site statique en français, sans dépendance obligatoire, qui pr
 1. Définir la structure de données et les conventions des fiches.
 2. Créer la page statique, son style sobre et le composant de fiche.
 3. Ajouter le Two-step et le Bart Simpson avec séquences de 2–3 poses en traits.
+4. Représenter les articulations de base, accepter des articulations supplémentaires par pose et permettre l’orientation de profil.
 
 **Point de contrôle :** les deux fiches s’affichent clairement sur mobile et ordinateur, et une personne peut comprendre les poses sans ouvrir une vidéo.
 
 ### Phase 2 : recherche et enrichissement
 
-4. Ajouter la recherche par nom et les filtres par style.
-5. Compléter le premier lot avec d’autres pas simples, répartis entre hip-hop/new-style, popping et locking.
-6. Ajouter les liens YouTube vérifiés quand ils sont disponibles, sans bloquer l’ajout des fiches sur ce point.
+5. Ajouter la recherche par nom et les filtres par style.
+6. Compléter le premier lot avec d’autres pas simples, répartis entre hip-hop/new-style, popping et locking.
+7. Ajouter les liens YouTube vérifiés quand ils sont disponibles, sans bloquer l’ajout des fiches sur ce point.
 
 **Point de contrôle :** rechercher un nom et filtrer chacun des trois styles fonctionne, y compris avec des fiches sans vidéo ou sans dérivation connue.
 
