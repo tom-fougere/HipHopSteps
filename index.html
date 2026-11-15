@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f3eb">
+    <meta name="description" content="Un répertoire illustré de pas hip-hop, popping et locking pour retrouver et pratiquer les mouvements.">
+    <title>Steps — Répertoire de danse</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="steps.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Steps, accueil">steps<span>·</span></a>
+      <p class="header-note">Ton carnet de mouvements</p>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">RÉPERTOIRE DE DANSE · V1</p>
+        <h1 id="page-title">Les pas, en clair.</h1>
+        <p class="lede">Un mouvement à la fois. Repère les appuis, observe les silhouettes, puis lance le son.</p>
+        <div class="intro-meta"><span id="step-count">0 pas</span><span class="meta-dot" aria-hidden="true">·</span><span>hip-hop, popping &amp; locking</span></div>
+      </section>
+
+      <section class="catalog" aria-label="Répertoire des pas">
+        <div class="toolbar">
+          <label class="search-wrap">
+            <span class="sr-only">Rechercher un pas</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+            <input id="search" type="search" placeholder="Chercher un pas…" autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <div class="filters" role="group" aria-label="Filtrer par style">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Tout <span>15</span></button>
+            <button class="filter" type="button" data-filter="hip-hop" aria-pressed="false">Hip-hop <span>04</span></button>
+            <button class="filter" type="button" data-filter="popping" aria-pressed="false">Popping <span>04</span></button>
+            <button class="filter" type="button" data-filter="locking" aria-pressed="false">Locking <span>07</span></button>
+          </div>
+        </div>
+
+        <div class="catalog-heading" aria-hidden="true"><span>LE PAS</span><span>LE MOUVEMENT</span><span>POUR VOIR</span></div>
+        <div id="steps-list" class="steps-list" aria-live="polite"></div>
+        <p id="empty-state" class="empty-state" hidden>Aucun pas trouvé. Essaie un autre nom ou un autre style.</p>
+        <p class="catalog-footnote">Les noms et variantes peuvent changer selon les danseurs et les scènes. Le répertoire s’enrichira au fil de la pratique.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Fait pour pratiquer, pas pour rester immobile.</span><span>Ajoute un son. Recommence.</span></footer>
+  </body>
+</html>
