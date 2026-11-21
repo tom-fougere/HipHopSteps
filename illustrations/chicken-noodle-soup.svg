@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-labelledby="title desc">
+  <title id="title">Chicken Noodle Soup : coups de pied de côté et bras croisés</title>
+  <desc id="desc">De face : lance le pied droit sur le côté avec les poings vers le bas, croise les poignets devant toi, puis lance le pied gauche de côté.</desc>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="133" height="158" rx="10"/>
+    <rect x="143" y="1" width="133" height="158" rx="10"/>
+    <rect x="285" y="1" width="134" height="158" rx="10"/>
+  </g>
+  <g fill="none" stroke="#272725" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="65" cy="28" r="9"/><circle cx="210" cy="28" r="9"/><circle cx="355" cy="28" r="9"/>
+    <path d="M65 38v43m-2-32-22 11 9 20-5 11m22-42 22 11-9 20 5 11M65 81l-14 19 3 25H43"/>
+    <path d="M210 38v43m-2-32-20 11 24 21m0-32 20 11-24 21M210 81l-18 20-3 24h-11m32-44 18 20 3 24h11"/>
+    <path d="M355 38v43m-2-32-22 11 9 20-5 11m22-42 22 11-9 20 5 11M355 81l14 19-3 25h11"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M65 81l18 19 28-12 9 4M355 81l-18 19-28-12-9 4"/>
+  </g>
+  <g fill="#af3e1d">
+    <circle cx="45" cy="91" r="3"/><circle cx="85" cy="91" r="3"/>
+    <circle cx="335" cy="91" r="3"/><circle cx="375" cy="91" r="3"/>
+    <circle cx="210" cy="79" r="4"/>
+  </g>
+  <g fill="none" stroke="#185771" stroke-width="2" stroke-linecap="round">
+    <path d="M102 72q8 5 11 12M318 72q-8 5-11 12"/>
+    <path d="M204 73l12 13m-12 0 12-13"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#272725" font-size="11" font-weight="bold">
+    <text x="67" y="147">Kick droit · poings bas</text>
+    <text x="210" y="147">Croise les poignets</text>
+    <text x="352" y="147">Kick gauche · répète</text>
+  </g>
+</svg>

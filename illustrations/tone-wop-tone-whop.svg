@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 155" role="img" aria-labelledby="title desc">
+  <title id="title">Tone Wop, petit pas, torsion et claquement</title>
+  <desc id="desc">Trois vues de face montrent un petit pas rebondi, le pied qui pivote tandis que les bras se referment pour claquer les doigts, puis le retour avant de changer de côté.</desc>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="134" height="127" rx="10"/>
+    <rect x="143" y="1" width="134" height="127" rx="10"/>
+    <rect x="285" y="1" width="134" height="127" rx="10"/>
+  </g>
+  <g fill="none" stroke="#222323" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="68" cy="27" r="8"/>
+    <path d="M68 35v9 M47 48l20-4 21 4 M52 48l3 25h27l2-25 M47 48l-18 8-17-7 M88 48l18 8 17-7 M55 73l-8 20-2 21-13 2 M82 73l8 18 7 27 14 2"/>
+    <circle cx="210" cy="27" r="8"/>
+    <path d="M210 35v9 M189 48l20-4 21 4 M194 48l3 25h27l2-25 M189 48l-12 14 23 2 10-8 M230 48l12 14-22 2-10-8 M197 73l-8 20-2 21-13 2 M224 73l10 18-13 26-13-3"/>
+    <circle cx="352" cy="27" r="8"/>
+    <path d="M352 35v9 M331 48l20-4 21 4 M336 48l3 25h27l2-25 M331 48l-18 8-16-7 M372 48l18 8 16-7 M339 73l-9 18 8 27 14 2 M366 73l8 20 2 21 13 2"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="2.5" stroke-linecap="round">
+    <path d="M111 109q-8-10-17-7m5-3-5 3 4 4 M232 107q-11 8-21 4m5-3-5 3 4 4"/>
+  </g>
+  <g fill="#185771">
+    <circle cx="97" cy="118" r="4"/><circle cx="221" cy="117" r="4"/><circle cx="338" cy="118" r="4"/>
+  </g>
+  <g fill="#222323" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">
+    <text x="68" y="146">1. Petit pas, bras ouverts</text>
+    <text x="210" y="146">2. Twist et claque</text>
+    <text x="352" y="146">3. Reviens, change</text>
+  </g>
+</svg>

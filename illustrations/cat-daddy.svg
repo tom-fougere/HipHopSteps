@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-labelledby="title desc">
+  <title id="title">Cat Daddy : bras croisés en alternance puis cercles et flexion</title>
+  <desc id="desc">De face : lance le bras droit devant le buste en penchant à gauche, puis le bras gauche en penchant à droite; termine en faisant tourner les deux bras près des hanches pendant que les genoux fléchissent.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="m1 1 5 3-5 3" fill="none" stroke="#185771" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="133" height="158" rx="10"/>
+    <rect x="143" y="1" width="133" height="158" rx="10"/>
+    <rect x="285" y="1" width="134" height="158" rx="10"/>
+  </g>
+  <g fill="none" stroke="#272725" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="71" cy="28" r="9"/>
+    <path d="M69 38 53 79m15-28-23 8-9 21 14 7m4-8-19 20-4 25H20m34-45 20 19 5 26h12"/>
+    <circle cx="207" cy="28" r="9"/>
+    <path d="m209 38 16 41m-15-28 23 8 9 21-14 7m-3-8 19 20 4 25h11m-34-45-20 19-5 26h-12"/>
+    <circle cx="352" cy="27" r="9"/>
+    <path d="M352 37v44m-12-30 12-5 12 5m-12 30-19 20-5 24h-11m35-44 19 20 5 24h11"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M68 51 79 58 34 51M210 51l-11 7 45-7"/>
+    <path d="M340 51l-11 26 5 13m30-39 11 26-5 13"/>
+  </g>
+  <g fill="none" stroke="#185771" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M320 75q-12 9-5 20m69-20q12 9 5 20"/>
+  </g>
+  <g fill="#af3e1d">
+    <circle cx="34" cy="51" r="3"/><circle cx="244" cy="51" r="3"/>
+    <circle cx="334" cy="90" r="3"/><circle cx="370" cy="90" r="3"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#272725" font-size="11" font-weight="bold">
+    <text x="67" y="147">Bras droit · penche</text>
+    <text x="210" y="147">Bras gauche · penche</text>
+    <text x="352" y="147">Deux cercles · descends</text>
+  </g>
+</svg>

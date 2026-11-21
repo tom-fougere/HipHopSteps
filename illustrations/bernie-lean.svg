@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 155" role="img" aria-labelledby="title desc">
+  <title id="title">Bernie Lean : buste en arrière et bras souples</title>
+  <desc id="desc">Deux temps de profil : penche le buste et la tête vers l’arrière, garde les genoux souples et laisse les bras tourner librement de part et d’autre du corps.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="m1 1 5 3-5 3" fill="none" stroke="#185771" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="204" height="153" rx="10"/>
+    <rect x="215" y="1" width="204" height="153" rx="10"/>
+  </g>
+  <g fill="none" stroke="#272725" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="82" cy="34" r="9"/>
+    <path d="M86 43 108 80m0 0-18 18 3 24H80m28-42 18 18-3 24h14"/>
+    <circle cx="293" cy="34" r="9"/>
+    <path d="m297 43 22 37m0 0-18 18 3 24h-13m28-42 18 18-3 24h14"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M94 57 111 65l18-14m-31 10-9 20-17 4"/>
+    <path d="m305 57 17 10 19 13m-31-19-13 15-16-14"/>
+  </g>
+  <g fill="none" stroke="#185771" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M142 44q17 24-5 46M272 88q-19-19 2-45"/>
+  </g>
+  <g fill="#272725" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">
+    <text x="103" y="144">Penche en arrière</text>
+    <text x="317" y="144">Laisse tourner les bras</text>
+  </g>
+</svg>

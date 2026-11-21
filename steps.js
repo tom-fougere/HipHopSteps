@@ -110,6 +110,78 @@ window.steps = [
     description: 'Balance ton poids d’un côté puis de l’autre, les genoux souples. Tu peux faire passer une main au-dessus de la tête pendant le balancement.',
     illustration: { src: 'illustrations/dougie.svg', view: 'De face, en miroir',
       alt: 'Charge un pied puis l’autre en gardant les genoux souples. Sur le second appui, une main balaie au-dessus de la tête.' }
+  },
+  {
+    id: 'bankhead-bounce', name: 'Bankhead Bounce', styleLabel: 'Hip-hop / new school',
+    description: 'Fais rebondir les épaules vers le haut, avant-bras fléchis près du visage ; croise les bras sur un temps puis ouvre-les sur le suivant.',
+    illustration: { src: 'illustrations/bankhead-bounce.svg', view: 'Buste de face, en deux temps',
+      alt: 'Deux dessins de face : épaules relevées, bras croisés devant le buste puis ouverts avec les poings près du visage.' }
+  },
+  {
+    id: 'a-town-stomp-atl-stomp', name: 'A-Town Stomp', aliases: ['ATL Stomp'], styleLabel: 'Hip-hop / new school',
+    description: 'Deux petits kicks en diagonale d’un côté, saut latéral et réception des deux pieds, puis miroir de l’autre côté.',
+    illustration: { src: 'illustrations/a-town-stomp-atl-stomp.svg', view: 'De face, en alternance',
+      alt: 'Trois phases du A-Town Stomp : deux kicks vers la droite, réception sautée sur les deux pieds, puis deux kicks vers la gauche.' }
+  },
+  {
+    id: 'walk-it-out', name: 'Walk It Out', styleLabel: 'Hip-hop / new school',
+    description: 'Pas droit puis gauche avec un rebond bas : à chaque appui, les deux pointes, les genoux et le bassin pivotent du côté du pas.',
+    illustration: { src: 'illustrations/walk-it-out.svg', view: 'De face, en miroir',
+      alt: 'Deux positions du Walk It Out : pas droit et pivot des deux pieds à droite, puis pas gauche et pivot des deux pieds à gauche, genoux fléchis.' }
+  },
+  {
+    id: 'monastery-monestary', name: 'Monastery', aliases: ['Monestary'], styleLabel: 'Hip-hop / new school',
+    description: 'Sur un two-step rebondi, pose un pied de côté puis touche de l’autre en rentrant le genou ; accompagne ce genou avec les bras et l’épaule, puis inverse.',
+    illustration: { src: 'illustrations/monastery-monestary.svg', view: 'Corps entier de face, en miroir',
+      alt: 'Deux dessins de face : pas de côté avec genou du pied touché tourné vers l’intérieur, bras et épaule accompagnant, puis mouvement inversé.' }
+  },
+  {
+    id: 'shoulder-lean', name: 'Shoulder Lean', styleLabel: 'Hip-hop / new school',
+    description: 'Penche le buste d’un côté en levant l’épaule de ce côté, puis inverse au rythme du rebond.',
+    illustration: { src: 'illustrations/shoulder-lean.svg', view: 'De face, en miroir',
+      alt: 'Deux phases du Shoulder Lean : le buste penche à droite avec l’épaule droite haute, puis à gauche avec l’épaule gauche haute.' }
+  },
+  {
+    id: 'chicken-noodle-soup', name: 'Chicken Noodle Soup', styleLabel: 'Hip-hop / new school',
+    description: 'Alterne les coups de pied de côté, les poings poussés vers le bas, puis croise les poignets devant toi.',
+    illustration: { src: 'illustrations/chicken-noodle-soup.svg', view: 'De face, en alternance',
+      alt: 'Trois phases du Chicken Noodle Soup : pied droit lancé de côté et poings bas, poignets croisés devant le corps, puis pied gauche lancé de côté.' }
+  },
+  {
+    id: 'rockaway-lean-back', name: 'Rockaway', aliases: ['Lean Back'], styleLabel: 'Hip-hop / new school',
+    description: 'Bras croisés et appuis au sol, rejette légèrement l’épaule droite et le buste en arrière sur le temps, puis reviens au centre.',
+    illustration: { src: 'illustrations/rockaway-lean-back.svg', view: 'De profil',
+      alt: 'Deux vues de profil du Rockaway : bras croisés au centre, puis épaule droite et buste légèrement rejetés en arrière.' }
+  },
+  {
+    id: 'run-it', name: 'Run It', styleLabel: 'Hip-hop / new school',
+    description: 'Avance un pied sur la pointe, fais pivoter les deux talons vers l’extérieur en pliant les genoux, ramène les talons droits puis recommence avec l’autre pied.',
+    illustration: { src: 'illustrations/run-it.svg', view: 'Pieds vus de dessus, en trois temps',
+      alt: 'Trois dessins vus de dessus : un pied avance, les talons tournent vers l’extérieur autour des pointes, puis l’autre pied avance.' }
+  },
+  {
+    id: 'cat-daddy', name: 'Cat Daddy', styleLabel: 'Hip-hop / new school',
+    description: 'Lance chaque bras devant le buste en penchant du côté opposé, puis fais deux cercles des bras en descendant sur les genoux.',
+    illustration: { src: 'illustrations/cat-daddy.svg', view: 'De face, en trois temps',
+      alt: 'Trois phases du Cat Daddy : bras droit devant le buste, bras gauche, puis cercles des deux bras avec flexion des genoux.' }
+  },
+  {
+    id: 'brooklyn-bounce-bk-bounce', name: 'Brooklyn Bounce', aliases: ['BK Bounce', 'The Brooklyn'], styleLabel: 'Hip-hop / middle school', derivation: 'Variante du Criss Cross',
+    description: 'Petit rebond : ouvre les pieds, croise-les dans un saut souple, tourne les pointes vers l’intérieur puis rouvre.',
+    illustration: { src: 'illustrations/brooklyn-bounce-bk-bounce.svg', view: 'Jambes de face',
+      alt: 'Trois positions du Brooklyn Bounce : pieds écartés, jambes croisées en réception fléchie, puis pointes rapprochées avant de rouvrir.' }
+  },
+  {
+    id: 'bernie-lean', name: 'Bernie Lean', styleLabel: 'Hip-hop / new school',
+    description: 'Penche le buste et la tête en arrière, puis laisse les bras tourner librement en alternance pendant de petits pas souples.',
+    illustration: { src: 'illustrations/bernie-lean.svg', view: 'De profil',
+      alt: 'Deux phases du Bernie Lean : buste et tête en arrière, bras relâchés qui tournent à tour de rôle, genoux souples.' }
+  },
+  {
+    id: 'tone-wop-tone-whop', name: 'Tone Wop', aliases: ['Tone Whop'], styleLabel: 'Litefeet',
+    description: 'Fais un petit pas, pivote le pied sur un rebond, puis reviens ; ouvre les bras avant de les ramener pour claquer des doigts sur la torsion. Alterne les côtés.',
+    illustration: { src: 'illustrations/tone-wop-tone-whop.svg', view: 'Corps entier de face, en trois temps',
+      alt: 'Trois dessins de face : petit pas avec bras ouverts, torsion du pied avec mains rapprochées pour un claquement, puis retour et changement de côté.' }
   }
 ];
 

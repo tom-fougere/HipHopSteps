@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 155" role="img" aria-labelledby="title desc">
+  <title id="title">Run It, pas en avant et pivot des talons</title>
+  <desc id="desc">Vue des pieds de dessus. Un pied avance, les deux talons pivotent vers l’extérieur sur les pointes, puis reviennent droits avant de changer de pied.</desc>
+  <defs>
+    <path id="shoe" d="M-7 2Q-9-2-7-12L-6-36Q-5-45 0-46Q6-45 7-36L7-12Q9-2 6 2Z"/>
+  </defs>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="134" height="127" rx="10"/>
+    <rect x="143" y="1" width="134" height="127" rx="10"/>
+    <rect x="285" y="1" width="134" height="127" rx="10"/>
+  </g>
+  <g fill="#f7f3eb" stroke="#222323" stroke-width="2" stroke-linejoin="round">
+    <use href="#shoe" transform="translate(51 105)"/>
+    <use href="#shoe" transform="translate(88 84)"/>
+    <use href="#shoe" transform="rotate(24 193 59) translate(193 105)"/>
+    <use href="#shoe" transform="rotate(-24 230 38) translate(230 84)"/>
+    <use href="#shoe" transform="translate(335 84)"/>
+    <use href="#shoe" transform="translate(372 105)"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="2.5" stroke-linecap="round">
+    <path d="M37 50V33m-4 5 4-5 4 5 M178 98q-10 1-15-8m3 1-3-1 1 4 M245 77q10 1 15-8m-3 1 3-1-1 4"/>
+  </g>
+  <g fill="#185771">
+    <circle cx="51" cy="59" r="3"/><circle cx="88" cy="38" r="3"/>
+    <circle cx="193" cy="59" r="3"/><circle cx="230" cy="38" r="3"/>
+    <circle cx="335" cy="38" r="3"/><circle cx="372" cy="59" r="3"/>
+  </g>
+  <g fill="#222323" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">
+    <text x="68" y="146">1. Avance un pied</text>
+    <text x="210" y="146">2. Talons dehors</text>
+    <text x="352" y="146">3. Reviens, change</text>
+  </g>
+</svg>

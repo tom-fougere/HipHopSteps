@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 155" role="img" aria-labelledby="title desc">
+  <title id="title">Shoulder Lean : pencher le buste et lever l’épaule</title>
+  <desc id="desc">De face : le buste penche à droite et l’épaule droite monte, puis le mouvement s’inverse à gauche sur le rebond des genoux.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="m1 1 5 3-5 3" fill="none" stroke="#af3e1d" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="204" height="153" rx="10"/>
+    <rect x="215" y="1" width="204" height="153" rx="10"/>
+  </g>
+  <g fill="none" stroke="#272725" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="113" cy="31" r="9"/>
+    <path d="M111 41l-13 38m12-28-28 11-6 19 14 6m21-36 24-5 12 18-8 19M98 79l-20 19-3 24h-11m34-43 18 18 8 25h12"/>
+    <circle cx="307" cy="31" r="9"/>
+    <path d="M309 41l13 38m-12-28 28 11 6 19-14 6m-21-36-24-5-12 18 8 19m41-4 20 19 3 24h11m-34-43-18 18-8 25h-12"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m110 51 24-5m176 5-24-5"/>
+    <path d="M146 33q11 8 3 21m125-21q-11 8-3 21" stroke-width="2.2" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#af3e1d">
+    <circle cx="135" cy="46" r="4"/>
+    <circle cx="285" cy="46" r="4"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#272725" font-size="13" font-weight="bold">
+    <text x="103" y="144">Penche · épaule droite ↑</text>
+    <text x="317" y="144">Inverse · épaule gauche ↑</text>
+  </g>
+</svg>

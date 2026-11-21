@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 154" role="img" aria-labelledby="title desc">
+  <title id="title">Brooklyn Bounce, ouvert, croisé et pointes rentrées</title>
+  <desc id="desc">Trois cadrages des jambes de face. D'abord les pieds sont écartés avec un petit rebond. Sur le temps, un saut léger croise les jambes et fléchit les genoux. Sur le contretemps, les pieds pivotent et les pointes se rapprochent avant de rouvrir.</desc>
+  <g fill="none" stroke="#dad4c7"><rect x="1" y="1" width="134" height="152" rx="10"/><rect x="143" y="1" width="134" height="152" rx="10"/><rect x="285" y="1" width="134" height="152" rx="10"/></g>
+  <g font-family="system-ui,sans-serif" fill="#25282a" text-anchor="middle">
+    <g font-size="13" font-weight="650"><text x="68" y="22">&amp; · Ouvre</text><text x="210" y="22">1 · Croise</text><text x="352" y="22">&amp; · Pointe dedans</text></g>
+    <g font-size="11"><text x="68" y="143">Petit rebond</text><text x="210" y="143">Réception fléchie</text><text x="352" y="143">Puis rouvre sur 2</text></g>
+  </g>
+  <g fill="none" stroke="#25282a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 53q18 7 36 0M50 53l-6 24 5 35m37-59 6 24-5 35"/>
+    <path d="M37 112h19m25 0h19" stroke="#af3e1d" stroke-width="4"/>
+    <path d="M192 53q18 7 36 0M192 53l15 25 22 34m-1-59-15 25-22 34"/>
+    <path d="M185 112h18m20 0h18" stroke="#af3e1d" stroke-width="4"/>
+    <path d="M334 53q18 7 36 0M334 53l11 24-12 35m37-59-11 24 12 35"/>
+    <path d="M329 112l16-6m30 6-16-6" stroke="#af3e1d" stroke-width="4"/>
+  </g>
+  <g fill="#25282a"><circle cx="44" cy="77" r="3"/><circle cx="92" cy="77" r="3"/><circle cx="207" cy="78" r="3"/><circle cx="213" cy="78" r="3"/><circle cx="345" cy="77" r="3"/><circle cx="359" cy="77" r="3"/></g>
+  <g fill="none" stroke="#af3e1d" stroke-width="2" stroke-linecap="round"><path d="M30 42q18-10 31-2m45 2q-18-10-31-2M166 43q24-15 33 0m55 0q-24-15-33 0"/></g>
+  <path d="M26 123h84m58 0h84m58 0h84" fill="none" stroke="#dad4c7" stroke-width="2"/>
+</svg>

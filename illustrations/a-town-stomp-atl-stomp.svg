@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-labelledby="title desc">
+  <title id="title">A-Town Stomp : deux kicks et une réception</title>
+  <desc id="desc">De face : donne deux petits coups de pied en diagonale à droite, saute de côté et retombe sur les deux pieds, puis recommence vers la gauche.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="m1 1 5 3-5 3" fill="none" stroke="#af3e1d" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="133" height="158" rx="10"/>
+    <rect x="143" y="1" width="133" height="158" rx="10"/>
+    <rect x="285" y="1" width="134" height="158" rx="10"/>
+  </g>
+  <g fill="none" stroke="#272725" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="63" cy="29" r="9"/>
+    <path d="M63 39l3 38m-3-29-21 9-7 18m29-26 18 6 8 17M66 77l-14 22 1 26-10 1"/>
+    <circle cx="210" cy="29" r="9"/>
+    <path d="M210 39v42m-2-30-22 9-4 20m30-29 23 9 4 20m-29 1-19 18-4 25h-11m34-43 19 18 4 25h11"/>
+    <circle cx="357" cy="29" r="9"/>
+    <path d="M357 39l-3 38m2-29-18 6-8 17m27-23 21 9 7 18m-31 2 14 22-1 26 10 1"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M66 77l18 13 28-12 8 5M354 77l-18 13-28-12-8 5"/>
+    <path d="M92 106q15-8 21-19M328 106q-15-8-21-19" stroke-width="2.2" marker-end="url(#arrow)"/>
+    <path d="M192 111v19m36-19v19" stroke-width="2.2" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g fill="#af3e1d" font-size="12" font-weight="bold">
+      <text x="105" y="68">×2</text><text x="315" y="68">×2</text>
+    </g>
+    <g fill="#272725" font-size="11" font-weight="bold">
+      <text x="67" y="147">Kick à droite</text>
+      <text x="210" y="147">Saute · atterris</text>
+      <text x="352" y="147">Kick à gauche</text>
+    </g>
+  </g>
+</svg>

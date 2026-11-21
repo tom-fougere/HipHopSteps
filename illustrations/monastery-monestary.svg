@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 155" role="img" aria-labelledby="title desc">
+  <title id="title">Monestary, pas touché et genou tourné vers l’intérieur</title>
+  <desc id="desc">Deux vues de face en miroir montrent un pas de côté, l’autre pied qui touche le sol avec le genou rentré, puis le même geste de l’autre côté. Les bras et l’épaule suivent le genou.</desc>
+  <defs>
+    <marker id="turn" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M1 1 6 4 1 7" fill="none" stroke="#af3e1d" stroke-width="1.5"/>
+    </marker>
+    <g id="pose" fill="none" stroke="#222323" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="0" cy="31" r="8"/>
+      <path d="M0 39v7 M-21 50Q0 41 19 43 M-18 51l4 25h27l6-32 M-21 50l-9 16 21 4 9-9 M19 43l12 13-23 11-11-8 M-14 76l-12 20-3 21-13 1 M13 76l21 20-8 21-12-3"/>
+      <circle cx="-26" cy="96" r="2.5" fill="#fffcf6"/>
+      <circle cx="34" cy="96" r="2.5" fill="#af3e1d" stroke="none"/>
+    </g>
+  </defs>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="204" height="128" rx="10"/>
+    <rect x="215" y="1" width="204" height="128" rx="10"/>
+  </g>
+  <use href="#pose" transform="translate(102 0)"/>
+  <use href="#pose" transform="translate(318 0) scale(-1 1)"/>
+  <g fill="none" stroke="#af3e1d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#turn)">
+    <path d="M151 91q-5 11-16 12 M269 91q5 11 16 12"/>
+  </g>
+  <g fill="#185771">
+    <circle cx="73" cy="118" r="4"/><circle cx="347" cy="118" r="4"/>
+  </g>
+  <g fill="#222323" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">
+    <text x="103" y="146">Pas, touche, rentre le genou</text>
+    <text x="317" y="146">Puis inverse le côté</text>
+  </g>
+</svg>
