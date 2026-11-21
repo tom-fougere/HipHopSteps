@@ -9,9 +9,18 @@ function defaultJoints(endpoint, side, limb) {
 }
 
 function articulatedLimb(anchor, joints) {
-  const points = [anchor, ...joints];
+  const absoluteJoints = joints.map(([dx, dy]) => [anchor[0] + dx, anchor[1] + dy]);
+  const points = [anchor, ...absoluteJoints];
   const path = points.map(point => point.join(',')).join(' ');
-  return `<polyline points="${path}"></polyline>${joints.map((point, index) => `<circle class="joint ${index === joints.length - 1 ? 'joint-end' : ''}" cx="${point[0]}" cy="${point[1]}" r="${index === joints.length - 1 ? 1.8 : 2.2}"></circle>`).join('')}`;
+  return `<polyline points="${path}"></polyline>${absoluteJoints.map((point, index) => `<circle class="joint ${index === absoluteJoints.length - 1 ? 'joint-end' : ''}" cx="${point[0]}" cy="${point[1]}" r="${index === absoluteJoints.length - 1 ? 1.8 : 2.2}"></circle>`).join('')}`;
+}
+
+function footMark(hip, legJoints, vector) {
+  if (!vector) return '';
+  const ankleOffset = legJoints.at(-1);
+  const ankle = [hip[0] + ankleOffset[0], hip[1] + ankleOffset[1]];
+  const toe = [ankle[0] + vector[0], ankle[1] + vector[1]];
+  return `<path class="foot-mark" d="M${ankle.join(' ')} L${toe.join(' ')}"></path>`;
 }
 
 function figure(pose, x) {
@@ -36,6 +45,7 @@ function figure(pose, x) {
     ${articulatedLimb(leftShoulder, leftArmJoints)}${articulatedLimb(rightShoulder, rightArmJoints)}
     <circle class="joint joint-core" cx="${leftHip[0]}" cy="38" r="2"></circle><circle class="joint joint-core" cx="${rightHip[0]}" cy="38" r="2"></circle>
     ${articulatedLimb(leftHip, leftLegJoints)}${articulatedLimb(rightHip, rightLegJoints)}
+    ${footMark(leftHip, leftLegJoints, pose.footVectors?.[0])}${footMark(rightHip, rightLegJoints, pose.footVectors?.[1])}
   </g>`;
 }
 
@@ -43,11 +53,12 @@ function motionSvg(step) {
   const xs = [52, 150, 248];
   const views = [...new Set(step.poses.map(pose => pose.view === 'profile' ? 'profil' : 'face'))];
   const figures = step.poses.map((pose, index) => figure(pose, xs[index])).join('');
+  const arrows = step.poses.slice(1).map((_, index) => `<path class="pose-arrow" marker-end="url(#arrowhead-${step.id})" d="M${xs[index] + 30} 65 L${xs[index + 1] - 30} 65"></path>`).join('');
   return `<span class="motion-view">Vue ${views.join(' + ')}</span><svg viewBox="0 0 300 104" role="img" aria-labelledby="${step.id}-title ${step.id}-desc">
     <title id="${step.id}-title">Séquence du pas ${step.name}</title>
-    <desc id="${step.id}-desc">Trois silhouettes schématiques montrant : ${step.poses.map(pose => pose.caption.toLowerCase()).join(', puis ')}.</desc>
+    <desc id="${step.id}-desc">${step.poses.length} silhouettes schématiques montrant : ${step.poses.map(pose => pose.caption.toLowerCase()).join(', puis ')}.</desc>
     <defs><marker id="arrowhead-${step.id}" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="none" stroke="#e85a32" stroke-width="1.4"></path></marker></defs>
-    <path class="pose-arrow" marker-end="url(#arrowhead-${step.id})" d="M82 65 L118 65 M180 65 L216 65"></path>
+    ${arrows}
     ${figures}
   </svg>`;
 }
@@ -65,7 +76,7 @@ function render() {
     </div>
     <div class="motion">
       ${motionSvg(step)}
-      <div class="pose-captions" aria-hidden="true">${step.poses.map((pose, index) => `<span>${index + 1}. ${pose.caption}</span>`).join('')}</div>
+      <div class="pose-captions" style="grid-template-columns: repeat(${step.poses.length}, 1fr)" aria-hidden="true">${step.poses.map((pose, index) => `<span>${index + 1}. ${pose.caption}</span>`).join('')}</div>
     </div>
     <div class="source-cell">${step.video ? `<a class="source-link" href="${step.video}" target="_blank" rel="noopener noreferrer" aria-label="${step.videoLabel} pour ${step.name}, ouvre un nouvel onglet"><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 3.5h8v8M12 4 4 12"></path></svg>${step.videoLabel}</a>` : '<span class="video-pending">Vidéo à ajouter</span>'}</div>
     <p class="step-note">${step.description}</p>
