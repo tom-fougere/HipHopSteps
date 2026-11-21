@@ -14,7 +14,7 @@ La V1 couvre uniquement le hip-hop / new-style. Elle constitue un répertoire de
 - Comme danseur, je peux retrouver un pas par son nom ou son nom alternatif.
 - Comme danseur, je peux voir si un pas dérive d’un autre pas connu.
 - Comme danseur, je peux ouvrir une vidéo de démonstration pour m’entraîner.
-- Comme danseur, je peux comprendre rapidement l’idée du mouvement à partir de 2–3 silhouettes en traits.
+- Comme danseur, je peux comprendre rapidement l’idée du mouvement à partir d’un dessin ou d’une courte séquence illustrée.
 - Comme propriétaire du répertoire, je peux partager la page avec mon groupe amateur.
 
 ## Contenu d’une fiche
@@ -25,9 +25,9 @@ Chaque entrée contient :
 - style associé : hip-hop / new-style ;
 - relation de dérivation, si connue, avec le nom du pas source ;
 - lien vers une vidéo de démonstration ;
-- séquence de 2–3 silhouettes très simples, corps et membres représentés par des traits ;
-- articulations visibles aux épaules, coudes, poignets, hanches, genoux et chevilles ; des articulations supplémentaires peuvent être placées individuellement lorsque le mouvement le demande ;
-- vue de face par défaut, avec une vue de profil possible pour chaque silhouette lorsque l’angle explique mieux le pas ;
+- dessin ou courte séquence de dessins adaptés au geste (silhouette, gros plan, empreintes ou autre schéma) ;
+- articulations ou points d’appui visibles quand ils aident à comprendre le geste ;
+- angle et cadrage libres pour chaque illustration : de face, de profil, de dessus ou autre selon le mouvement ;
 - courte explication en français du repère à suivre pendant l’entraînement ;
 - flèches de direction ou de déplacement lorsque cela aide à expliquer le mouvement.
 
@@ -38,7 +38,7 @@ Une dérivation inconnue ou non établie doit être indiquée comme telle, et no
 - Présenter les pas sous forme de liste ou de grille de fiches compacte.
 - Permettre de rechercher par nom et noms alternatifs.
 - Garder la recherche utilisable sur écran mobile et ordinateur.
-- Afficher les silhouettes et les informations principales sans obliger l’utilisateur à ouvrir la vidéo.
+- Afficher les illustrations et les informations principales sans obliger l’utilisateur à ouvrir la vidéo.
 - Ouvrir le lien vidéo dans un nouvel onglet ou lecteur adapté.
 - Utiliser une interface sobre, lisible et facile à partager ; aucune direction artistique poussée n’est requise.
 
@@ -52,7 +52,7 @@ Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man 
 
 - La page est destinée à fonctionner dans un navigateur moderne et à être partageable via un lien ou un hébergement statique.
 - Le répertoire peut commencer avec un jeu de données local intégré au projet ; un compte utilisateur, une base de données et des contributions publiques ne sont pas nécessaires pour la V1.
-- Les silhouettes sont des schémas explicatifs simples, pas des animations ni des illustrations détaillées.
+- Les dessins sont des schémas explicatifs simples, pas des animations ni des illustrations détaillées.
 - La page et ses libellés seront en français ; les noms usuels des pas peuvent rester dans leur langue d’usage.
 
 ## Pile technique et commandes
@@ -86,14 +86,14 @@ Le premier lot de travail comprend le Two-step, le Bart Simpson, le Running Man 
 - Vérifier que la recherche par nom et variante donne des résultats cohérents.
 - Vérifier les fiches avec et sans dérivation renseignée.
 - Vérifier qu’une fiche sans vidéo ne casse pas l’affichage.
-- Vérifier que chaque séquence comporte 2–3 poses compréhensibles et que les flèches, si présentes, ont un sens clair.
+- Vérifier que chaque dessin ou séquence montre le repère distinctif du pas et que les flèches, si présentes, ont un sens clair.
 - Parcourir la page sur écran étroit et large, au clavier et avec un lecteur d’écran pour les contrôles principaux.
 - Contrôler les liens vidéo et les références de contenu avant livraison.
 
 ## Critères de réussite
 
 - L’utilisateur peut retrouver chacun des pas du répertoire par son nom.
-- Chaque fiche présente le nom, le style, une courte explication du mouvement, la relation de dérivation lorsqu’elle est établie et 2–3 silhouettes simples. Un lien YouTube peut compléter la fiche ; la collecte des vidéos n’est pas prioritaire par rapport à l’identification et à la compréhension des pas.
+- Chaque fiche présente le nom, le style, une courte explication du mouvement, la relation de dérivation lorsqu’elle est établie et une illustration qui fait ressortir le geste. Un lien YouTube peut compléter la fiche ; la collecte des vidéos n’est pas prioritaire par rapport à l’identification et à la compréhension des pas.
 - Une entrée sans dérivation ou vidéo vérifiée reste présentée clairement sans information inventée ni interface cassée.
 - La recherche et les fiches restent lisibles sur mobile et ordinateur.
 - La page peut être partagée avec le groupe sans compte ni procédure de cours.

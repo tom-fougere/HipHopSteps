@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 192" role="img" aria-labelledby="title desc">
+  <title id="title">The Prep, de trois quarts en miroir</title>
+  <desc id="desc">Pied droit devant en diagonale. Ramène les épaules vers l’arrière et lève le talon avant. Garde un avant-bras haut et l’autre bas, puis échange les côtés.</desc>
+  <defs>
+    <marker id="rock" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="m2 1 6 4-6 4" fill="none" stroke="#af3e1d" stroke-width="1.6"/>
+    </marker>
+    <g id="pose" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke="#222323" stroke-width="4">
+        <circle cx="98" cy="58" r="11"/>
+        <path d="m105 70 4 11 11 27m-8 0h15m-15 0-15 17 2 19h-13m41-36 19 17-6 10 9 9"/>
+      </g>
+      <path d="m105 81-17 16 12-4m14-11 16 8 1-22" stroke="#185771" stroke-width="4"/>
+      <g fill="#222323">
+        <circle cx="97" cy="125" r="3"/>
+        <circle cx="146" cy="125" r="3"/>
+      </g>
+      <g fill="#185771">
+        <circle cx="88" cy="97" r="3"/>
+        <circle cx="130" cy="90" r="3"/>
+      </g>
+      <path d="M74 65q-11 4-20 15" stroke="#af3e1d" stroke-width="3" marker-end="url(#rock)"/>
+      <circle cx="141" cy="135" r="4" stroke="#af3e1d" stroke-width="2"/>
+      <path d="M73 146h91" stroke="#d9d5cb" stroke-width="1.5"/>
+    </g>
+  </defs>
+  <path d="M220 42v129" stroke="#d9d5cb"/>
+  <use href="#pose"/>
+  <use href="#pose" transform="translate(440) scale(-1 1)"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#222323">
+    <g font-size="17" font-weight="700">
+      <text x="110" y="25">1. Diagonale droite</text>
+      <text x="330" y="25">2. Diagonale gauche</text>
+    </g>
+    <g font-size="15">
+      <text x="110" y="169">Rock arrière · talon levé</text>
+      <text x="330" y="169">Inverse les bras et l’appui</text>
+    </g>
+  </g>
+</svg>

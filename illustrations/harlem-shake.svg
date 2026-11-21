@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 155" role="img" aria-labelledby="title desc">
+  <title id="title">Harlem Shake, mouvement des épaules</title>
+  <desc id="desc">Une épaule avance pendant que l’autre recule. Inverse rapidement et laisse les bras suivre le buste.</desc>
+  <defs>
+    <g id="torso" fill="none" stroke="#272725" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <circle cx="0" cy="-28" r="9"/>
+      <path d="M0-19v7 M-26 2Q-13-9 0-11Q15-10 24-5 M-26 2l-7 19 13 10 M24-5l8 20-12 14 M-21 1l4 31 31-1 6-34"/>
+      <circle cx="-25" cy="2" r="5" fill="#af3e1d" stroke="none"/>
+      <circle cx="24" cy="-5" r="4" fill="#185771" stroke="none"/>
+      <path d="M-35-12q-9 5-5 14m-5-4 5 4 3-6" stroke="#af3e1d"/>
+      <path d="M31-9q5-6 2-13m-4 5 4-5 5 3" stroke="#185771"/>
+    </g>
+  </defs>
+  <g fill="#fffcf6" stroke="#d6d0c3">
+    <rect x="8" y="8" width="196" height="120" rx="10"/>
+    <rect x="216" y="8" width="196" height="120" rx="10"/>
+  </g>
+  <use href="#torso" transform="translate(105 60)"/>
+  <use href="#torso" transform="translate(315 60) scale(-1 1)"/>
+  <g text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#272725">
+    <text x="106" y="115">1. Avance une épaule</text>
+    <text x="314" y="115">2. Inverse sur le rebond</text>
+    <text x="210" y="146">Accent vers l’avant</text>
+  </g>
+  <circle cx="144" cy="142" r="3" fill="#af3e1d"/>
+</svg>

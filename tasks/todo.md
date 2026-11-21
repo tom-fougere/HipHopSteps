@@ -23,7 +23,7 @@
 **Critères d’acceptation :**
 - [x] Le site s’ouvre localement sans serveur applicatif.
 - [x] Les fiches montrent le nom, le style, la dérivation quand elle est connue et le lien vidéo quand il existe.
-- [x] Chaque fiche rend ses 2–3 silhouettes et des flèches éventuelles dans un SVG accessible.
+- [x] Une fiche peut afficher un dessin SVG adapté, avec un texte alternatif. Les poses articulées restent possibles.
 - [x] Les coudes, poignets, genoux et autres articulations de base sont visibles ; une pose peut définir des articulations supplémentaires.
 - [x] Une pose peut être dessinée de profil si cet angle aide à comprendre le déplacement.
 

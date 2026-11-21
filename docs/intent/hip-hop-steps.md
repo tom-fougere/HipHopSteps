@@ -12,7 +12,7 @@ Le répertoire est d’abord destiné à son créateur pour son entraînement pe
 
 - Hip-hop / new-style uniquement
 
-Chaque fiche doit présenter le nom du pas, son style, ses dérivations éventuelles et un lien vers une vidéo. Elle doit aussi inclure 2–3 silhouettes très simples, dessinées avec des traits pour le corps et les membres, afin de montrer les positions ou le mouvement. Des flèches peuvent être ajoutées si elles facilitent la compréhension.
+Chaque fiche doit présenter le nom du pas, son style, ses dérivations éventuelles et un lien vers une vidéo. Elle doit aussi inclure un dessin ou une courte séquence qui met en évidence le geste à mémoriser. Le cadrage et l’angle peuvent varier selon le pas. Des flèches peuvent être ajoutées si elles facilitent la compréhension.
 
 Le premier lot commencera par des pas simples, notamment le Two-step et le Bart Simpson, puis sera complété par d’autres pas simples. YouTube est la source vidéo envisagée, mais les liens vidéo ne sont pas la priorité du premier travail.
 

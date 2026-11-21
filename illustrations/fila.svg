@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 176">
+  <title>Fila, variante avant et arrière</title>
+  <desc>Face à droite, pose le pied gauche devant en laissant descendre le bras droit. Reviens sur le pied droit et saute légèrement en frappant des mains au-dessus de la tête.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+      <path d="M0 0 5 2.5 0 5z" fill="#af3e1d"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#dad4c7" stroke-width="1">
+    <rect x="1" y="1" width="213" height="173" rx="13"/>
+    <rect x="226" y="1" width="213" height="173" rx="13"/>
+    <path d="M43 140h129m96 0h129"/>
+  </g>
+  <g fill="none" stroke="#222323" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="120" cy="54" r="9"/>
+    <path d="m128 53 4 2-4 2m-13 7-18 37m0 0 19 13 12 25h12m-44-38-21 15-10 23h10m38-68 10 15-18 14"/>
+    <circle cx="332" cy="55" r="9"/>
+    <path d="m340 54 4 2-4 2m-12 7-5 28m0 0-13 15 4 21h11m-2-36 14 13 13 15h10"/>
+  </g>
+  <g fill="none" stroke="#185771" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m113 73 14 25 15 14"/>
+    <path d="m328 70-10-21 10-19m9 42 14-22-18-20"/>
+    <path d="m323 22-4-5m12 3v-7m7 9 4-5" stroke-width="2"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M148 120q12-4 16-12"/>
+    <path d="M288 132V108"/>
+  </g>
+  <g fill="#222323" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+    <text x="107" y="161">1. Avance, bras droit bas</text>
+    <text x="332" y="161">2. Recule, saute et frappe</text>
+  </g>
+</svg>

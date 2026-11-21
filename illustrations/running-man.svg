@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 225" role="img" aria-labelledby="title desc">
+  <title id="title">Running Man, de profil</title>
+  <desc id="desc">Monte le genou droit sur l’appui gauche. Pose le pied droit devant pendant que le gauche glisse en arrière. Monte le genou gauche sur l’appui droit, puis inverse.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="m2 1 6 4-6 4" fill="none" stroke="#185771" stroke-width="1.6"/>
+    </marker>
+    <g id="torso" fill="none" stroke="#222323" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="98" cy="62" r="10"/>
+      <path d="m106 60 5 4-5 3m-10 7-7 21-4 24"/>
+    </g>
+  </defs>
+  <path d="M180 38v161m180-161v161" fill="none" stroke="#d9d5cb"/>
+  <g fill="none" stroke="#c1bbae" stroke-width="2">
+    <path d="M29 170h122m58 0h122m58 0h122"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <g>
+      <use href="#torso"/>
+      <path d="M89 87 73 103 80 113M89 89l15 13 14-12" stroke="#222323"/>
+      <path d="M84 118 90 144 82 166h11" stroke="#185771"/>
+      <path d="M87 118 115 120 109 141l8 4" stroke="#af3e1d"/>
+    </g>
+    <g transform="translate(180 3)">
+      <use href="#torso"/>
+      <path d="M89 87 71 102 82 110M89 89l12 15 15-4" stroke="#222323"/>
+      <path d="M83 118 65 140 51 165h10" stroke="#185771"/>
+      <path d="M87 118 113 140 115 165h11" stroke="#af3e1d"/>
+      <path d="M88 181H44" stroke="#185771" stroke-width="3" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(360)">
+      <use href="#torso"/>
+      <path d="M89 89l15 13 14-12M89 87 73 103 80 113" stroke="#222323"/>
+      <path d="M84 118 90 144 82 166h11" stroke="#af3e1d"/>
+      <path d="M87 118 115 120 109 141l8 4" stroke="#185771"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#222323" font-weight="700" font-size="16">
+    <text x="90" y="27">1. Genou droit</text>
+    <text x="270" y="27">2. Pose et glisse</text>
+    <text x="450" y="27">3. Genou gauche</text>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" font-size="13">
+    <text x="90" y="201" fill="#185771">Appui à gauche</text>
+    <text x="270" y="201" fill="#185771">Le gauche recule</text>
+    <text x="450" y="201" fill="#af3e1d">Appui à droite</text>
+  </g>
+</svg>

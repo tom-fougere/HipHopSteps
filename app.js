@@ -1,5 +1,6 @@
 const list = document.querySelector('#steps-list');
 const search = document.querySelector('#search');
+const illustratedOnly = document.querySelector('#illustrated-only');
 const empty = document.querySelector('#empty-state');
 const count = document.querySelector('#step-count');
 
@@ -63,30 +64,45 @@ function motionSvg(step) {
   </svg>`;
 }
 
+function stepIllustration(step) {
+  if (step.illustration) {
+    const { src, view, alt } = step.illustration;
+    return `<span class="motion-view">${view}</span>
+      <img class="step-illustration" src="${src}" alt="${alt}" loading="lazy">`;
+  }
+  if (!step.poses?.length) return '';
+  return `${motionSvg(step)}
+    <div class="pose-captions" style="grid-template-columns: repeat(${step.poses.length}, 1fr)" aria-hidden="true">${step.poses.map((pose, index) => `<span>${index + 1}. ${pose.caption}</span>`).join('')}</div>`;
+}
+
 function render() {
   const query = search.value.trim().toLocaleLowerCase('fr');
-  const visible = window.steps.filter(step => [step.name, ...step.aliases, step.styleLabel].join(' ').toLocaleLowerCase('fr').includes(query));
+  const visible = window.steps.filter(step => {
+    const matches = [step.name, ...(step.aliases ?? []), step.styleLabel].join(' ').toLocaleLowerCase('fr').includes(query);
+    return matches && (!illustratedOnly.checked || step.illustration || step.poses?.length);
+  });
 
-  list.innerHTML = visible.map(step => `<article class="step-row" aria-labelledby="${step.id}-name">
+  list.innerHTML = visible.map(step => {
+    const illustration = stepIllustration(step);
+    return `<article class="step-row${illustration ? '' : ' step-row-pending'}" aria-labelledby="${step.id}-name">
     <div class="step-info">
       <span class="step-number">${String(window.steps.indexOf(step) + 1).padStart(2, '0')} / ${String(window.steps.length).padStart(2, '0')}</span>
       <h2 id="${step.id}-name">${step.name}</h2>
       <span class="style-tag">${step.styleLabel}</span>
       ${step.derivation ? `<p class="derivation">↳ ${step.derivation}</p>` : ''}
     </div>
-    <div class="motion">
-      ${motionSvg(step)}
-      <div class="pose-captions" style="grid-template-columns: repeat(${step.poses.length}, 1fr)" aria-hidden="true">${step.poses.map((pose, index) => `<span>${index + 1}. ${pose.caption}</span>`).join('')}</div>
-    </div>
-    <div class="source-cell">${step.video ? `<a class="source-link" href="${step.video}" target="_blank" rel="noopener noreferrer" aria-label="${step.videoLabel} pour ${step.name}, ouvre un nouvel onglet"><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 3.5h8v8M12 4 4 12"></path></svg>${step.videoLabel}</a>` : '<span class="video-pending">Vidéo à ajouter</span>'}</div>
-    <p class="step-note">${step.description}</p>
-  </article>`).join('');
+    ${illustration ? `<div class="motion">${illustration}</div>` : ''}
+    ${step.video ? `<div class="source-cell"><a class="source-link" href="${step.video}" target="_blank" rel="noopener noreferrer" aria-label="${step.videoLabel} pour ${step.name}, ouvre un nouvel onglet"><svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 3.5h8v8M12 4 4 12"></path></svg>${step.videoLabel}</a></div>` : ''}
+    <p class="step-note">${step.description ?? 'Illustration à préparer'}</p>
+  </article>`;
+  }).join('');
 
   count.textContent = `${visible.length} pas`;
   empty.hidden = visible.length !== 0;
 }
 
 search.addEventListener('input', render);
+illustratedOnly.addEventListener('change', render);
 document.addEventListener('keydown', event => {
   if (event.key === '/' && document.activeElement !== search && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
     event.preventDefault();

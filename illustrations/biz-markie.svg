@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 158" role="img" aria-labelledby="title desc">
+  <title id="title">Biz Markie, saut et balancier</title>
+  <desc id="desc">De face, en miroir, saute en levant un bras. Balance ce bras en diagonale devant le corps. À la réception, remonte les épaules, puis repars de l’autre côté.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M1 1l7 4-7 4" fill="none" stroke="context-stroke" stroke-width="2"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#d8d2c5">
+    <path d="M140 15v113m140-113v113M28 121h84m56 0h84m56 0h84"/>
+  </g>
+  <g fill="none" stroke="#242522" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(70)">
+      <circle cy="42" r="8"/><path d="M0 50v35m-12-27h24M-12 58l-8 13 4 12M-6 84l-9 13 3 13h-6M6 84l9 13-3 13h6"/>
+      <path d="M12 58l12-13-4-15" stroke="#185771" stroke-width="4"/>
+      <path d="M-34 102V74" stroke="#af3e1d" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(210)">
+      <circle cy="45" r="8"/><path d="M0 53l7 36m-17-27 25-3m-25 3-10 12 3 10M2 88l-11 15 1 11h-6m25-27 9 14-3 13h6"/>
+      <path d="M15 59l1 18-20 10m44-45q-3 24-29 47" stroke="#185771" stroke-width="3.5" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(350)">
+      <circle cy="47" r="8"/><path d="M2 55l9 34m-18-28 25-1M-7 61l-12 15 6 10M5 88l-15 13 1 19h-6m31-33 10 15-4 18h7"/>
+      <path d="M18 60l-4 18-25 15" stroke="#185771" stroke-width="4"/>
+      <path d="M-26 65V52m59 13V52" stroke="#af3e1d" marker-end="url(#arrow)"/>
+    </g>
+  </g>
+  <g fill="#242522" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">
+    <text x="70" y="145">1. Saute, bras haut</text>
+    <text x="210" y="145">2. Balaie en diagonale</text>
+    <text x="350" y="145">3. Pose, épaules hautes</text>
+  </g>
+</svg>

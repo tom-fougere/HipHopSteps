@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 173" role="img" aria-labelledby="title desc">
+  <title id="title">Roger Rabbit de profil</title>
+  <desc id="desc">Lance le pied droit derrière toi, pose-le et libère le pied gauche. Lance alors le pied gauche derrière toi. Le mouvement alterne sur un petit rebond.</desc>
+  <defs>
+    <marker id="back" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0 6 3 0 6" fill="#af3e1d"/>
+    </marker>
+    <g id="body" stroke="#252726" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <circle cx="4" cy="32" r="8"/>
+      <path d="m11 31 4 2-4 1M3 40 0 77m2-30-11 14 12 4m-1-18 10 12 13-8"/>
+    </g>
+  </defs>
+  <g fill="#fffcf6" stroke="#d9d5cb">
+    <rect x="1" y="1" width="154" height="148" rx="10"/>
+    <rect x="163" y="1" width="154" height="148" rx="10"/>
+    <rect x="325" y="1" width="154" height="148" rx="10"/>
+  </g>
+  <g transform="translate(80)">
+    <use href="#body"/>
+    <path d="M-42 115h83" stroke="#b7b1a5"/>
+    <path d="M0 77 8 96 6 113h8" fill="none" stroke="#185771" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0 77-11 92-32 89l-5-5" fill="none" stroke="#af3e1d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1 103Q-18 106-31 99" fill="none" stroke="#af3e1d" stroke-width="2.5" marker-end="url(#back)"/>
+    <text x="-3" y="137" text-anchor="middle">Droit derrière</text>
+  </g>
+  <g transform="translate(242)">
+    <use href="#body" transform="rotate(8 0 77)"/>
+    <path d="M-42 115h83" stroke="#b7b1a5"/>
+    <path d="M0 77 13 91 26 105l8 1" fill="none" stroke="#185771" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0 77-12 96-21 113h8" fill="none" stroke="#af3e1d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="-2" y="137" text-anchor="middle">Pose le droit</text>
+  </g>
+  <g transform="translate(404)">
+    <use href="#body"/>
+    <path d="M-42 115h83" stroke="#b7b1a5"/>
+    <path d="M0 77 8 96 6 113h8" fill="none" stroke="#af3e1d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0 77-11 92-32 89l-5-5" fill="none" stroke="#185771" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1 103Q-18 106-31 99" fill="none" stroke="#185771" stroke-width="2.5" marker-end="url(#back)"/>
+    <text x="-2" y="137" text-anchor="middle">Gauche derrière</text>
+  </g>
+  <style>text{font:600 14px system-ui,sans-serif;fill:#252726}.legend{font-size:12px}</style>
+  <circle cx="139" cy="162" r="4" fill="#af3e1d"/>
+  <text x="148" y="166" class="legend">Jambe droite</text>
+  <circle cx="264" cy="162" r="4" fill="#185771"/>
+  <text x="273" y="166" class="legend">Jambe gauche</text>
+</svg>

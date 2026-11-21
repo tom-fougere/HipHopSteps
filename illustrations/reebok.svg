@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 154" role="img" aria-labelledby="title desc">
+  <title id="title">Reebok, deux levées puis trois appuis</title>
+  <desc id="desc">En miroir, le genou droit se lève vers l’intérieur et se repose, puis se lève à nouveau. Trois appuis droit gauche droit suivent. La séquence se répète de l’autre côté.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="m0 0 6 3-6 3z" fill="#af3e1d"/></marker>
+    <g id="lift" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <path d="M-13 0H12M-13 0l-3 22v24h-6" stroke="#25282a"/>
+      <path d="M12 0l-1 20 13 10h6" stroke="#af3e1d"/>
+      <circle cx="11" cy="20" r="3" fill="#af3e1d" stroke="none"/>
+      <circle cx="-16" cy="22" r="3" fill="#25282a" stroke="none"/>
+      <path d="M34 42q4-12-5-22" stroke="#af3e1d" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+  </defs>
+  <g fill="none" stroke="#dad4c7">
+    <rect x="1" y="1" width="128" height="129" rx="10"/>
+    <rect x="146" y="1" width="128" height="129" rx="10"/>
+    <rect x="291" y="1" width="128" height="129" rx="10"/>
+  </g>
+  <g font-family="system-ui,sans-serif" text-anchor="middle" fill="#25282a">
+    <g font-size="12" font-weight="650">
+      <text x="65" y="20">Lève et repose</text>
+      <text x="210" y="20">Lève à nouveau</text>
+      <text x="355" y="20">Pose trois fois</text>
+    </g>
+    <use href="#lift" x="60" y="39"/>
+    <use href="#lift" x="205" y="39"/>
+    <path d="M30 89h70m75 0h70" stroke="#dad4c7" stroke-dasharray="3 3"/>
+    <g font-size="11">
+      <text x="65" y="112">Genou droit rentré</text>
+      <text x="210" y="112">Même genou</text>
+      <text x="355" y="112">Droit · gauche · droit</text>
+      <text x="210" y="149">Recommence en levant le genou gauche.</text>
+    </g>
+    <g font-size="13" font-weight="700" fill="white">
+      <circle cx="324" cy="63" r="13" fill="#af3e1d"/><text x="324" y="68">D</text>
+      <circle cx="355" cy="63" r="13" fill="#185771"/><text x="355" y="68">G</text>
+      <circle cx="386" cy="63" r="13" fill="#af3e1d"/><text x="386" y="68">D</text>
+    </g>
+  </g>
+</svg>

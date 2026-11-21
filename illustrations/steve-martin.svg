@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 214" role="img" aria-labelledby="title">
+  <title id="title">Steve Martin, pas de profil et demi-tour</title>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <path d="M0 0L6 3.5L0 7" fill="none" stroke="#af3e1d"/>
+    </marker>
+    <g id="kick">
+      <circle cx="5" cy="20" r="9"/>
+      <path d="M14 17l4 2-4 2M4 30L-3 56M1 39l-13 9-10-7m23-2-7 14-12 0"/>
+      <path d="M-3 56l5 23-3 23h6" stroke="#185771"/>
+      <path d="M-3 56l-12 20-17-16" stroke="#af3e1d"/>
+    </g>
+    <g id="lift">
+      <circle cx="-4" cy="20" r="9"/>
+      <path d="M5 17l4 2-4 2M-3 30L1 55M-2 39l13 13 14-5m-27-8 14 7 10 7"/>
+      <path d="M1 55l17 0 0 19h6" stroke="#185771"/>
+      <path d="M1 55l-4 24 4 23h6" stroke="#af3e1d"/>
+    </g>
+  </defs>
+  <g fill="none" stroke="#272522" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#kick" transform="translate(66 10)"/>
+    <use href="#lift" transform="translate(201 10)"/>
+    <use href="#kick" transform="translate(336 10)"/>
+    <use href="#lift" transform="translate(471 10) scale(-1 1)"/>
+  </g>
+  <g stroke="#b6ad9f">
+    <path d="M36 114h61m74 0h61m74 0h61m74 0h61"/>
+  </g>
+  <path d="M425 72c5-24 26-34 43-29" fill="none" stroke="#af3e1d" stroke-width="2" marker-end="url(#arrow)"/>
+  <g fill="#272522" font-family="system-ui,sans-serif" font-size="15" text-anchor="middle">
+    <text x="67" y="139">1. Talon</text><text x="67" y="158">gauche derrière</text>
+    <text x="202" y="139">2. Genou</text><text x="202" y="158">droit devant</text>
+    <text x="337" y="139">3. Talon</text><text x="337" y="158">gauche derrière</text>
+    <text x="472" y="139">4. Demi-tour</text><text x="472" y="158">genou gauche</text>
+    <text x="270" y="195" font-size="13" fill="#535952">Orange : jambe gauche · bleu : jambe droite · puis inverse les côtés</text>
+  </g>
+</svg>

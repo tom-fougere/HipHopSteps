@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 225" role="img" aria-labelledby="title desc">
+  <title id="title">Bart Simpson, de face en miroir</title>
+  <desc id="desc">Pas à droite, bras vers la gauche. Ramène le pied gauche et recentre les bras. Pas à gauche, bras vers la droite. Garde les genoux souples.</desc>
+  <defs>
+    <marker id="feet" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="m2 1 6 4-6 4" fill="none" stroke="#af3e1d" stroke-width="1.6"/>
+    </marker>
+    <marker id="arms" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="m2 1 6 4-6 4" fill="none" stroke="#185771" stroke-width="1.6"/>
+    </marker>
+    <g id="side" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <g stroke="#222323" stroke-width="4">
+        <circle cx="112" cy="62" r="11"/>
+        <path d="m110 74-8 20-3 24m-8 0h16m-16 0-20 21-19 22h-6m61-43 18 21-2 22h10"/>
+      </g>
+      <path d="M112 85 86 100 65 100 M101 84 82 89 62 95" stroke="#185771" stroke-width="4"/>
+      <g fill="#185771"><circle cx="86" cy="100" r="3"/><circle cx="82" cy="89" r="3"/></g>
+      <g fill="#222323"><circle cx="71" cy="139" r="3"/><circle cx="125" cy="139" r="3"/></g>
+      <path d="M62 112H33" stroke="#185771" stroke-width="3" marker-end="url(#arms)"/>
+      <path d="M73 174h59" stroke="#af3e1d" stroke-width="3" marker-end="url(#feet)"/>
+    </g>
+  </defs>
+  <g fill="none" stroke="#d9d5cb">
+    <path d="M180 34v165m180-165v165"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#222323">
+    <g font-size="16" font-weight="700">
+      <text x="90" y="27">1. Pas à droite</text>
+      <text x="270" y="27">2. Rapproche</text>
+      <text x="450" y="27">3. Pas à gauche</text>
+    </g>
+    <g font-size="13">
+      <text x="90" y="198">Bras vers la gauche</text>
+      <text x="270" y="198">Ramène les bras</text>
+      <text x="450" y="198">Bras vers la droite</text>
+      <text x="270" y="222" fill="#585950">De face, en miroir</text>
+    </g>
+  </g>
+  <use href="#side"/>
+  <use href="#side" transform="translate(540) scale(-1 1)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#222323" stroke-width="4">
+      <circle cx="270" cy="62" r="11"/>
+      <path d="M270 74v42m-8 0h16m-16 0-9 24 5 21h-9m29-45 9 24-5 21h9"/>
+    </g>
+    <path d="M270 86h-11l-12 19 16-2m7-17h11l12 19-13-9" stroke="#185771" stroke-width="4"/>
+    <path d="M225 174h19" stroke="#af3e1d" stroke-width="3" marker-end="url(#feet)"/>
+  </g>
+  <g fill="#222323"><circle cx="253" cy="140" r="3"/><circle cx="287" cy="140" r="3"/></g>
+  <g fill="#185771"><circle cx="247" cy="105" r="3"/><circle cx="293" cy="105" r="3"/></g>
+</svg>

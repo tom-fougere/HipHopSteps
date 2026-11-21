@@ -1,7 +1,7 @@
 # Plan d’implémentation : Répertoire de pas hip-hop V1
 
 **Spécification source :** [docs/specs/hip-hop-steps-v1.md](../docs/specs/hip-hop-steps-v1.md)  
-**État Git :** dépôt local initialisé sur `main`, aucun remote configuré.
+**Suite du projet :** [Enrichissement du répertoire illustré](illustrations.md).
 
 ## Aperçu
 
@@ -11,7 +11,7 @@ Créer un petit site statique en français, sans dépendance obligatoire, qui pr
 
 - **Site statique HTML, CSS et JavaScript natifs :** adapté à un répertoire consultable, simple à modifier et sans serveur ni compte requis.
 - **Données séparées dans un fichier JavaScript ou JSON :** chaque entrée garde un identifiant, ses noms, son style, ses éventuelles dérivations, son URL vidéo et les poses illustrées.
-- **Silhouettes en SVG intégré :** permet de dessiner des traits, des articulations et des flèches sans images lourdes ni dépendance graphique.
+- **Illustrations en SVG :** choisir l’angle ou le détail le plus lisible pour chaque pas. Le site accepte les dessins autonomes et les poses articulées intégrées.
 - **Commencer hors ligne pour la vidéo :** liens YouTube ajoutés au fil de la vérification ; le dessin et les informations doivent suffire à comprendre l’entrée.
 - **Partage :** livrer une page locale fonctionnelle ; sélectionner un hébergement et une visibilité avant publication si nécessaire.
 

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 170" role="img" aria-labelledby="title desc">
+  <title id="title">Patty Duke, variante enseignée par MDS-Duo</title>
+  <desc id="desc">Tape de la pointe devant. Fais un petit saut sur l’autre pied en balançant un bras, main ouverte. Pivote légèrement et alterne les côtés.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M2 1l6 4-6 4" fill="none" stroke="context-stroke" stroke-width="2"/>
+    </marker>
+  </defs>
+  <g fill="#fffdf8" stroke="#dad4c7">
+    <rect x="1" y="2" width="142" height="147" rx="8"/>
+    <rect x="154" y="2" width="142" height="147" rx="8"/>
+    <rect x="307" y="2" width="142" height="147" rx="8"/>
+  </g>
+  <g fill="none" stroke="#252624" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 116h100m53 0h100m53 0h100" stroke="#dad4c7" stroke-width="1"/>
+    <circle cx="68" cy="33" r="8"/>
+    <path d="M66 42l2 35M58 48l19-2M62 76h14M62 76l-9 16 2 19h-8M76 76l12 12 11 20 1 6"/>
+    <path d="M58 48l-11 12-6 13m36-27 9 14 11 4" stroke="#185771"/>
+    <circle cx="100" cy="115" r="3" fill="#af3e1d" stroke="none"/>
+    <path d="M112 99q4 11-7 14" stroke="#af3e1d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <circle cx="219" cy="24" r="8"/>
+    <path d="M218 33l5 32M210 39l20-3M217 66l13-3m-13 3-9 17 4 21h-8m26-41 14 13 7 19 4 2"/>
+    <path d="M210 39l-14 12-8 12m42-27 11 10 15-11m0 0 4-2m-4 2 3-5m-3 5 0-5" stroke="#185771"/>
+    <path d="M248 62q15-4 17-23" stroke="#185771" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M197 110V92" stroke="#af3e1d" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <circle cx="381" cy="33" r="8"/>
+    <path d="M382 42l-2 35M370 46l21 2m-17 28h13m-13 0-11 12-11 20-1 6m36-38 9 16-2 19h8"/>
+    <path d="M370 46l-12 10-13-8m0 0-5-2m5 2-4-5m4 5-1-6m47 6 11 12 6 13" stroke="#185771"/>
+    <circle cx="351" cy="115" r="3" fill="#af3e1d" stroke="none"/>
+    <path d="M405 33q-6-16-25-14" stroke="#af3e1d" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#252624" font-family="system-ui, sans-serif" font-weight="600" font-size="12" text-anchor="middle">
+    <text x="72" y="136">1. Pointe devant</text>
+    <text x="225" y="136">2. Petit saut + bras</text>
+    <text x="378" y="136">3. Pivote, inverse</text>
+  </g>
+  <text x="225" y="165" text-anchor="middle" fill="#535952" font-family="system-ui, sans-serif" font-size="11">Variante enseignée par MDS-Duo</text>
+</svg>

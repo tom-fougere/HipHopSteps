@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 154" role="img" aria-labelledby="title desc">
+  <title id="title">Dougie de face en miroir</title>
+  <desc id="desc">Balance le poids d’un côté, puis de l’autre en gardant les genoux souples. Pour accentuer le mouvement, fais passer une main au-dessus de la tête.</desc>
+  <defs>
+    <marker id="weight" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="m1 1 5 3-5 3" fill="none" stroke="#af3e1d" stroke-width="1.5"/>
+    </marker>
+    <marker id="hand" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="m1 1 5 3-5 3" fill="none" stroke="#185771" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <g fill="#fffcf6" stroke="#dad4c7">
+    <rect x="1" y="1" width="204" height="152" rx="10"/>
+    <rect x="215" y="1" width="204" height="152" rx="10"/>
+  </g>
+  <g fill="none" stroke="#222323" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="83" cy="33" r="9"/>
+    <path d="M86 43l15 33m-28-25 27-10M91 77l19-6M92 77l-14 17 4 20h-9m37-43 17 19 8 23h10"/>
+    <circle cx="340" cy="37" r="9"/>
+    <path d="m337 46-15 29m3-31 28 13m-42 15 19 5m-19-5-19 19-8 22h-10m56-36 14 17-4 20h9"/>
+  </g>
+  <g fill="#af3e1d">
+    <circle cx="82" cy="114" r="4"/>
+    <circle cx="340" cy="114" r="4"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M126 123H85m212 0h40" stroke="#af3e1d" stroke-width="2.5" marker-end="url(#weight)"/>
+    <path d="m73 51-6 17 14 3m19-30 11 12-12 8m226-17-10 12 4 12m34-11 12-16-14-15" stroke="#185771" stroke-width="3"/>
+    <path d="M371 34q-6-20-30-17" stroke="#185771" stroke-width="2.5" marker-end="url(#hand)"/>
+  </g>
+  <g fill="#222323" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">
+    <text x="103" y="144">Balance-toi d’un côté</text>
+    <text x="317" y="144">Inverse et ajoute la main</text>
+  </g>
+</svg>

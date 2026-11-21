@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 246" role="img" aria-labelledby="title desc">
+  <title id="title">Two-step, quatre temps en vue miroir</title>
+  <desc id="desc">Pied droit sur le côté, le gauche rejoint. Pied gauche sur le côté, le droit rejoint. La flèche montre le déplacement du pied coloré.</desc>
+  <defs>
+    <path id="shoe" d="M-5 9 Q-8 9-8 5L-9-3Q-10-13-1-13H1Q10-13 9-3L8 5Q8 9 5 9Z"/>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="m1 1 6 3-6 3" fill="none" stroke="#af3e1d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g fill="#f3eee3">
+    <rect width="133" height="105" rx="9"/>
+    <rect x="147" width="133" height="105" rx="9"/>
+    <rect y="117" width="133" height="105" rx="9"/>
+    <rect x="147" y="117" width="133" height="105" rx="9"/>
+  </g>
+  <g fill="#222323" font-family="system-ui,sans-serif" font-size="13" text-anchor="middle">
+    <text x="66" y="21">1. Pas à droite</text>
+    <text x="213" y="21">2. Gauche rejoint</text>
+    <text x="66" y="138">3. Pas à gauche</text>
+    <text x="213" y="138">4. Droit rejoint</text>
+    <text x="140" y="240">Vue miroir · le pied coloré bouge</text>
+  </g>
+  <g fill="none" stroke="#967f70" stroke-width="1.5" stroke-dasharray="3 2">
+    <use href="#shoe" x="57" y="83"/>
+    <use href="#shoe" x="178" y="83"/>
+    <use href="#shoe" x="73" y="200"/>
+    <use href="#shoe" x="246" y="200"/>
+  </g>
+  <g fill="#f7f3eb" stroke="#222323" stroke-width="2">
+    <use href="#shoe" x="31" y="83"/>
+    <use href="#shoe" x="246" y="83"/>
+    <use href="#shoe" x="99" y="200"/>
+    <use href="#shoe" x="178" y="200"/>
+  </g>
+  <g fill="#f3d0bd" stroke="#af3e1d" stroke-width="2">
+    <use href="#shoe" x="99" y="83"/>
+    <use href="#shoe" x="220" y="83"/>
+    <use href="#shoe" x="31" y="200"/>
+    <use href="#shoe" x="204" y="200"/>
+  </g>
+  <g fill="none" stroke="#af3e1d" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M57 56h42"/>
+    <path d="M178 56h42"/>
+    <path d="M73 173H31"/>
+    <path d="M246 173h-42"/>
+  </g>
+</svg>
